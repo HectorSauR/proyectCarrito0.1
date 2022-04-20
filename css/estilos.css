@@ -25,6 +25,11 @@ body{
     
  }
 
+ .enc .part1 h3 a {
+     text-decoration: none;
+     color: white;
+ }
+
  .enc .part1 header h3{  
     text-align: center;
     border: 1.5px solid white;
