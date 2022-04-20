@@ -8,7 +8,6 @@ body{
 }
 
 .enc{
-    
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -30,7 +29,7 @@ body{
      color: white;
  }
 
- .enc .part1 header h3{  
+ .enc .part1 div h3{  
     text-align: center;
     border: 1.5px solid white;
  }
