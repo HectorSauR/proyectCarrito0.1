@@ -1,3 +1,11 @@
+header{
+    text-align: center;
+}
+
+header h2{
+    color: #14213D;
+    font-size: 30pt;
+}
 
 header .contenedor-arriba{
     background: #14213D;
@@ -8,7 +16,6 @@ header .contenedor-arriba{
 header .contenedor-arriba .btn-usuario, header .contenedor-arriba .btn-nombre{
     position: absolute;
 }
-
 header .contenedor-arriba .btn-nombre{
     display: block;
     border: #fff solid 1px;
@@ -16,7 +23,7 @@ header .contenedor-arriba .btn-nombre{
     text-decoration: none;
     color: #fff;
     left: 20px;
-    top: 10%;
+    top: 20%;
     padding: 0 10px;
 }
 
@@ -24,15 +31,17 @@ header .contenedor-arriba .contenedor-busqueda{
     margin: 0 auto;
     width: 50%;
     color: #fff;
+    text-align: left;
 }
 
 header .contenedor-arriba .contenedor-busqueda .btn-busqueda{
     color: #fff;
+    font-size: 20pt;
 }
 
 header .contenedor-arriba .btn-usuario{
-    right: 20px;
-    top: 10%;
+    right: 50px;
+    top: 20%;
     font-size: 30pt;
     color: #fff;
 }

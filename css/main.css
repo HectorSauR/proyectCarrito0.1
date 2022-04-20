@@ -3,7 +3,7 @@
     width: 1000px;
     margin: 0 auto;
 }
-.container .contenedor-producto{
+.container .producto{
     width: 30%;
     /* border: #000 solid 1px; */
     /* box-shadow: 1px 2px 2px 1px black; */
@@ -13,12 +13,24 @@
     margin-top: 10px;
 }
 main .container{
-    margin-top: 50px;
     background: #e5e5e5;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main .container h3{
+    display: block;
+    font-size: 20pt;
+    color: rgba(61, 84, 134, 0.98);
+    /* color: #fca311; */
+}
+
+main .container .contenedor-productos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 25px 10px;
+    text-align: left;
 }
 
 main .container .contenedor-img{
