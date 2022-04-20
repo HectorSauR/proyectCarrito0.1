@@ -51,6 +51,16 @@ header .contenedor-abajo{
     position:relative;
     overflow: hidden;
     padding: 10px;
+    position: relative;
+}
+
+header .contenedor-abajo .btn-carrito{
+    position: absolute;
+    font-size: 15pt;
+    right: 50px;
+    top: 20%;
+    color: #fca311;
+
 }
 
 
