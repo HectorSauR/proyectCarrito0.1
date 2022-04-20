@@ -69,3 +69,12 @@ header .contenedor-abajo ul a{
 header .contenedor-abajo ul li{
     list-style: none;
 }
+
+footer{
+    text-align: center;
+    font-size: 15pt;
+    background:#14213D;
+    overflow: hidden;
+    margin-top: 10px;
+    color: #fff;
+}
