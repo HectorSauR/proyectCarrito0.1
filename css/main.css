@@ -1,4 +1,10 @@
 
+main{
+    margin-top: 100px; 
+    text-align: center;  
+}
+
+
 .container {
     width: 1000px;
     margin: 0 auto;
@@ -12,10 +18,20 @@
     border-radius: 10px;
     margin-top: 10px;
 }
+
+.container .producto h2{
+    font-size: 15pt;
+}
+
 main .container{
     background: #e5e5e5;
     text-align: center;
     padding-top: 10px;
+}
+main h2{
+    margin-top: 130px;
+    color: #14213D;
+    font-size: 30pt;
 }
 
 main .container h3{
