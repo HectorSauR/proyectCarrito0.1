@@ -1,11 +1,19 @@
 header{
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top:0;
 }
 
-header h2{
+/* header h2{
     color: #14213D;
     font-size: 30pt;
-}
+} */
+
+/* header .contenedor-abajo, header .contenedor-arriba{
+    position: sticky;
+    top: 0px;
+} */
 
 header .contenedor-arriba{
     background: #14213D;
