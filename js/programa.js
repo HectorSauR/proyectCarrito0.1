@@ -1,7 +1,7 @@
 var galleta = new cookie();
 // ejemplo de creacion ----------------------------------------------
 
-// galleta.setValoresCookie("prueba","cosa2",1);
+galleta.setValoresCookie("prueba","cosa2",1);
 
 //ejemplo de obtencion de dato----------------------------------------------
 

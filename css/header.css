@@ -1,0 +1,62 @@
+
+header .contenedor-arriba{
+    background: #14213D;
+    position:relative;
+    overflow: hidden;
+    padding: 20px;
+}
+header .contenedor-arriba .btn-usuario, header .contenedor-arriba .btn-nombre{
+    position: absolute;
+}
+
+header .contenedor-arriba .btn-nombre{
+    display: block;
+    border: #fff solid 1px;
+    font-size: 6pt;
+    text-decoration: none;
+    color: #fff;
+    left: 20px;
+    top: 10%;
+    padding: 0 10px;
+}
+
+header .contenedor-arriba .contenedor-busqueda{
+    margin: 0 auto;
+    width: 50%;
+    color: #fff;
+}
+
+header .contenedor-arriba .contenedor-busqueda .btn-busqueda{
+    color: #fff;
+}
+
+header .contenedor-arriba .btn-usuario{
+    right: 20px;
+    top: 10%;
+    font-size: 30pt;
+    color: #fff;
+}
+
+header .contenedor-abajo{
+    background: rgba(61, 84, 134, 0.98);
+    position:relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+header .contenedor-abajo ul{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .contenedor-abajo ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .contenedor-abajo ul li{
+    list-style: none;
+}
