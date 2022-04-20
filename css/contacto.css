@@ -1,0 +1,29 @@
+main .conten .empresa{
+    width: 30%;
+    /* border: #000 solid 1px; */
+    /* box-shadow: 1px 2px 2px 1px black; */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* Aquí se modifican los txt box*/
+main .conten .txtcontact >*{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+/* Aquí se modifican los buttons */
+main .conten .button >*{
+    background: #fca311;
+    color: white;
+}
+main .conten{
+    background: #e5e5e5;
+    text-align: center;
+    padding-top: 10px;
+}
+.conten {
+    width: 1000px;
+    margin: 0 auto;
+}
