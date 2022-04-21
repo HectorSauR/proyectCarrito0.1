@@ -16,12 +16,13 @@ header{
 } */
 
 header .contenedor-arriba{
+    z-index: 2;
     background: #14213D;
     position:relative;
-    overflow: hidden;
+    overflow: visible;
     padding: 20px;
 }
-header .contenedor-arriba .btn-usuario, header .contenedor-arriba .btn-nombre{
+header .contenedor-arriba .nav .btn-usuario, header .contenedor-arriba .btn-nombre{
     position: absolute;
 }
 header .contenedor-arriba .btn-nombre{
@@ -47,14 +48,53 @@ header .contenedor-arriba .contenedor-busqueda .btn-busqueda{
     font-size: 20pt;
 }
 
-header .contenedor-arriba .btn-usuario{
+header .contenedor-arriba .nav .btn-usuario{
     right: 50px;
     top: 20%;
     font-size: 30pt;
     color: #fff;
 }
 
+ul,ol{
+    list-style: none;
+}
+
+
+
+header .contenedor-arriba .nav ul,header .contenedor-arriba .nav li{
+    right: 50px;
+    top: 20%;
+    color: #fff;
+ }
+
+ header .contenedor-arriba .nav li ul a{
+    background-color: #FCA311;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+ }
+
+ header .contenedor-arriba .nav li ul a:hover{
+    background-color: #434343;
+}
+
+header .contenedor-arriba .nav  li ul {
+    margin-top: 40px;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+} 
+
+header .contenedor-arriba .nav li:hover > ul{
+    display: block;
+}
+
+
+
+
 header .contenedor-abajo{
+    z-index: 1;
     background: rgba(61, 84, 134, 0.98);
     position:relative;
     overflow: hidden;
