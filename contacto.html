@@ -20,7 +20,15 @@ además de que muestre los datos que se integren en los txt box  -->
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
-            <a href="#" class="btn-usuario"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+            <ul class="nav">
+                <li>
+                    <a href="#" class="btn-usuario"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                  <ul>
+                    <li><a href="#">INICIAR SESION </a></li>
+                    <li><a href="#">CONFIGURACION</a></li>
+                  </ul>
+                </li>
+            </ul>
         </div>
         <div class="contenedor-abajo">
             <a href="#" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -31,9 +39,9 @@ además de que muestre los datos que se integren en los txt box  -->
                 <li><a href="#">Inicio</a></li>
             </ul>
         </div>
-        <h2>¡Contactanos!</h2>
     </header>
     <main>
+        <h2>¡Contactanos!</h2>
         <div class="conten">
             <!-- En toda está zona es donde está la imagen y los datos de la empresa -->
             <article class="empresa">
@@ -41,21 +49,22 @@ además de que muestre los datos que se integren en los txt box  -->
                     <img src="img/envipropment.jpg" alt="">
                 </div>
                 <div class="descripcion">
-                    <h2>ENVIPROPMENT</h2>
+                    <h3>ENVIPROPMENT</h3>
                     <p>Empresa desarrolladora de software</p>
                 </div>
             </article>
             <form>
                 <!-- En está parte están los text box y buttons  -->
                 <div class="txtcontact">
-                    <label for="txtnombre">Nombre:</label>
-                    <input id="txtnombre" type="text" name="nombre"/>
-   
-                    <label for="txtcorreo">Correo: </label>
-                    <input id="txtcorreo" type="email" name="correo"/>
-   
-                    <label for="txtmensaje">Mensaje: </label>
-                    <input id="txtmensaje" type="text" name="mensaje"/>
+                    <div class="nombre">
+                        <label for="txtnombre">Nombre:</label>
+                        <input id="txtnombre" type="text" name="nombre"/>
+                    </div>
+                    <div class="correo">
+                        <label for="txtcorreo">Correo: </label>
+                        <input id="txtcorreo" type="email" name="correo"/>
+                    </div>
+                    <textarea name="mensajee" placeholder="Mensaje:"></textarea>
                 </div>
                 
                 <div class="button">
@@ -63,9 +72,9 @@ además de que muestre los datos que se integren en los txt box  -->
                     <input type="reset" value="Limpiar"/> 
                 </div>
                 
-            </form>
+            </form> 
             
-        </div>
+        </div>  
         
     </main>
     <footer>
