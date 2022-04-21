@@ -4,11 +4,11 @@ main{
     text-align: center;  
 }
 
-
 .container {
     width: 1000px;
     margin: 0 auto;
 }
+
 .container .producto{
     width: 30%;
     /* border: #000 solid 1px; */
@@ -21,6 +21,12 @@ main{
 
 .container .producto h2{
     font-size: 15pt;
+    margin-top: 20px;
+}
+
+.container .producto .precio{
+    text-align: right;
+    margin-right: 10px;
 }
 
 main .container{
