@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5;
+}
+.formulario .login {
+  
+  margin: 10% auto;
+  width: 60%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.formulario .login input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #fff;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+}
+
+.formulario .login .lbl-usuario,
+.formulario .login .lblcontraseña {
+  /* position: absolute; 
+  bottom: 0;
+   left: 0;
+   */
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.formulario .login .lbl-usuario::after,
+.formulario .login .lbl-contraseña::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.formulario .login .lbl-usuario .text-usur,
+.formulario .login .lbl-contraseña .text-contr {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.formulario .login input:focus + .lbl-usuario .text-usur,
+.formulario .login input:valid + .lbl-usuario .text-usur,
+.formulario .login input:focus + .lbl-contraseña .text-contr,
+.formulario .login input:valid + .lbl-contraseña .text-contr {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2ecece;
+}
+
+.formulario .login input:focus + .lbl-usuario::after,
+.formulario .login input:valid + .lbl-usuario::after,
+.formulario .login input:focus + .lbl-contraseña::after,
+.formulario .login input:valid + .lbl-contraseña::after {
+  transform: translatex(0%);
+}
