@@ -1,5 +1,4 @@
 
-
 header{
     text-align: center;
     position: fixed;
@@ -16,6 +15,7 @@ header{
     position: sticky;
     top: 0px;
 } */
+
 
 header .contenedor-arriba{
     z-index: 2;
