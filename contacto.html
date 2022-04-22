@@ -1,0 +1,87 @@
+<!-- Falta el href desde cualquier lugar dando click a envipropment y envie aqui
+además de que muestre los datos que se integren en los txt box  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-arriba">
+            <a href="#" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
+            <div class="contenedor-busqueda">
+                <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="#" class="btn-usuario"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                  <ul>
+                    <li><a href="#">INICIAR SESION </a></li>
+                    <li><a href="#">CONFIGURACION</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="contenedor-abajo">
+            <a href="#" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Inicio</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2>¡Contactanos!</h2>
+        <div class="conten">
+            <!-- En toda está zona es donde está la imagen y los datos de la empresa -->
+            <article class="empresa">
+                <div class="contenedor-img">
+                    <img src="img/envipropment.jpg" alt="">
+                </div>
+                <div class="descripcion">
+                    <h3>ENVIPROPMENT</h3>
+                    <p>Empresa desarrolladora de software</p>
+                </div>
+            </article>
+            <form>
+            
+                <!-- En está parte están los text box y buttons  -->
+                <div class="txtcontact">
+                    <div class="nombre">
+                        <label for="txtnombre">Nombre:</label>
+                        <input id="txtnombre" type="text" name="nombre"/>
+                    </div>
+                    <div class="correo">
+                        <label for="txtcorreo">Correo: </label>
+                        <input id="txtcorreo" type="email" name="correo"/>
+                    </div>
+                    <textarea name="mensajee" placeholder="Mensaje:"></textarea>
+                </div>
+                
+                <div class="button">
+                    <input type="submit" value="Enviar" /> 
+                    <input type="reset" value="Limpiar"/> 
+                </div>
+                
+            </form> 
+            
+        </div>  
+        
+    </main>
+    <footer>
+        <p>made by ENVIPROPMENT</p>
+    </footer>
+    <script src="js/cookie.js"></script>
+    <script src="js/programa.js"></script>
+</body>
+</html>
