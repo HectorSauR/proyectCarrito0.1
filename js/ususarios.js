@@ -7,6 +7,8 @@ document
   .getElementById("btn-borrarus")
   .addEventListener("click", eliminarusuario);
 
+
+
 function crearusuario() {
   let us = document.getElementById("txtusuario").value;
   let contr = document.getElementById("txtcontr").value;
@@ -26,8 +28,6 @@ function crearusuario() {
   usc.setValoresCookie(us, contr, 1);
   //location.href =""
 }
-
-
 
 function eliminarusuario() {
   let us = document.getElementById("txtusuario").value;
@@ -63,20 +63,18 @@ function ususarioconsulta() {
     var array2 = c.split("=");
 
     //console.log(array2 + " = " + i)
-    
-      let fila = document.createElement("tr");
 
+    let fila = document.createElement("tr");
 
-      let datos = document.createElement("td");
-      datos.innerText = array2[0];
-      fila.appendChild(datos);
+    let datos = document.createElement("td");
+    datos.innerText = array2[0];
+    fila.appendChild(datos);
 
-      datos = document.createElement("td");
-      datos.innerText = array2[1];
-      fila.appendChild(datos);
+    datos = document.createElement("td");
+    datos.innerText = array2[1];
+    fila.appendChild(datos);
 
-      cuerpotabla.appendChild(fila);
-  
+    cuerpotabla.appendChild(fila);
 
     tableRef.appendChild(cuerpotabla);
   }
