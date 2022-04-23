@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="css/tabla.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="ususarioconsulta()">
+
+    
+
+
     <header>
         <div class="contenedor-arriba">
             <a href="#" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
@@ -40,6 +44,7 @@
         </div>
     </header>
 <main>
+
     <form class="registro">
         <h4>Registro</h4>
         <label for="txtusuario">Usuario</label>
@@ -48,14 +53,14 @@
         <label for="txtcontr">Contraseña</label>
         <input type="password"  name="txtcontr" id="txtcontr" size="20" required placeholder="Ingrese contraseña">
         <br>
-         <input type="submit" value="Ingresar">
-         <input type="submit" value="Borrar mi ususario">
+         <input type="submit" value="Registrarse" id="btn-registrar">
+         <input type="submit" value="Borrar mi ususario" id="btn-borrarus">
     <!-- <br> -->
 </form>
 
 
 
-<table class="registrados">
+<table class="registrados" id="tbl-registrados">
    <caption>REGISTRADOS</caption>
     <thead>
         <tr>
@@ -64,19 +69,11 @@
         </tr>
     </thead>
 
-    
-    <tbody>
-        <tr>
-            <td>PITO</td>
-            <td>pito123</td>
-        </tr>
-        
-    </tbody>
 </table>
 </main>
-  
 
 
-    
+<script src="js/cookie.js"></script>
+<script src="js/ususarios.js"></script>
 </body>
 </html>
