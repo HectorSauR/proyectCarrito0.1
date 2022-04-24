@@ -58,6 +58,17 @@ main .container .contenedor-productos{
     overflow-x: hidden;
 }
 
+main .container .contenedor-productos .contenedor-descripcion .btn-agregar-carrito{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: #FCA311;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 main .container .contenedor-img{
     width: 100%;
     text-align: center;
@@ -65,5 +76,7 @@ main .container .contenedor-img{
 
 main .container .contenedor-img img{
     width: 200px;
+    height: 200px;
     vertical-align: top;
+    
 }

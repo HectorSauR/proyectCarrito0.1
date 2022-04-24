@@ -36,7 +36,7 @@ class cookie{
             var c = array[i];
             //extraer el caracter 0 de la cadena hasta que encuentre un vacío
             while(c.charAt(0)==" "){
-                alert(c);
+                // alert(c);
                 c = c.substring(1);
             }
             if(c.indexOf(nom)==0){
