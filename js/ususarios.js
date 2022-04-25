@@ -7,7 +7,7 @@ document
   .getElementById("btn-borrarus")
   .addEventListener("click", eliminarusuario);
 
-
+    
 
 function crearusuario() {
   let us = document.getElementById("txtusuario").value;
@@ -26,8 +26,9 @@ function crearusuario() {
   }
   alert("USUSARIO REGISTRADO");
   usc.setValoresCookie(us, contr, 1);
-  //location.href =""
+  // window.location.assign("http://127.0.0.1:5500/"); 
 }
+
 
 function eliminarusuario() {
   let us = document.getElementById("txtusuario").value;
@@ -42,27 +43,23 @@ function eliminarusuario() {
 }
 
 function ususarioconsulta() {
-  // tbl = document.getElementById("tbl-registrados").insertRow(1);
+  
   var tableRef = document.getElementById("tbl-registrados");
   var cuerpotabla = document.createElement("tbody");
 
-  alert(document.cookie);
+  
 
   var array = document.cookie.split(";");
   for (var i = 1; i < array.length; i++) {
-    //obtencion de los trozos dividos en el array
+    
     var c = array[i];
-    //extraer el caracter 0 de la cadena hasta que encuentre un vacío
+   
     while (c.charAt(0) == " ") {
       c = c.substring(1);
-      // alert(c);
+      
     }
 
-    //console.log(c + " = " + i);
-
     var array2 = c.split("=");
-
-    //console.log(array2 + " = " + i)
 
     let fila = document.createElement("tr");
 
@@ -78,4 +75,16 @@ function ususarioconsulta() {
 
     tableRef.appendChild(cuerpotabla);
   }
+
+
 }
+
+function nombuser(){
+  usc.setNombre("uslogueado");
+  var uss = usc.obtenerDato;
+  var ca = document.getElementById("btn-usuario");
+  let sp = document.createElement("span");
+  sp.innerText=uss;
+  ca.appendChild(sp);
+}
+
