@@ -9,10 +9,18 @@ function user() {
     let contr = document.getElementById("txtcontrL").value;
     
     
+  if(us == "" || us == null){
+    return alert("Porfavor ingresa usuario");
+  }
+  if(contr == "" || contr == null){
+    return alert("Porfavor ingresa contraseña");
+  }
+  
+    
     usc.setNombre(us);
     if (contr == usc.obtenerDatoLogin) {
       usc.setValoresCookie("uslogueado", us, 1);
-      window.location.assign("http://127.0.0.1:5500/inicio.html"); 
+      window.location.assign("inicio.html"); 
       alert("BIENVENIDO DE NUEVO: " + us);
     } else {
       alert("CONTRASEÑA INCORRECTA");

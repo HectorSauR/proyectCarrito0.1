@@ -31,9 +31,11 @@ function crearusuario() {
       return 
     }
   }
+  
+  usc.setValoresCookie("uslogueado", us, 1);
   alert("USUSARIO REGISTRADO");
   usc.setValoresCookie(us, contr, 1);
-  window.location.assign("http://127.0.0.1:5500/inicio.html"); 
+  window.location.assign("inicio.html"); 
 }
 
 
@@ -97,11 +99,12 @@ function ususarioconsulta() {
   
     
     
+    
 
 }
 
  
-  function nombuser(){
+    function nombuser(){
     usc.setNombre("uslogueado");
     var uss = usc.obtenerDato;
     var ca = document.querySelector(".usuario");
@@ -115,9 +118,8 @@ document.getElementById("cs").addEventListener("click",cs);
 
 
 function cs(){
-   alert(asoidjoaisdj);
-   usc.setNombre("uslogueado");
    
+   usc.setNombre("uslogueado");
    usc.borrarCookie()
 
 }
