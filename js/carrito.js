@@ -16,8 +16,8 @@ function obtenerDatosProducto(){
         
         var productos = array[i].split("¿");
         
-        calcTotalaPagar(productos);
         agregarProductoTabla(productos);
+        calcTotalaPagar(productos);
 
 
     }
@@ -30,7 +30,8 @@ function obtenerDatosProducto(){
 function agregarProductoTabla(datos){
     
     const row = document.createElement("tr");
-
+    // var id = datos[0].substring(7);
+    // console.log(id);
     row.innerHTML = `
         <td>
         <img src="${datos[5]}" alt="">
@@ -48,7 +49,7 @@ function agregarProductoTabla(datos){
             <p>${datos[4]}</p>
         </td>
         <td>
-            <a href="#"><i class="fa fa-minus-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-minus-square btn-borrar" id="btn-borrar" aria-hidden="true"></i></a>
         </td>
     `
     tabla.appendChild(row);
@@ -61,4 +62,27 @@ function calcTotalaPagar(prod){
 
     totalPagar += parseFloat(prod[3],10) * parseFloat(precio,10);
     // console.log(prod[4] );
+}
+
+
+var btnBorrar = $(".btn-borrar");
+
+
+btnBorrar.each(function(index,element){
+    // console.log($(this).parent());
+    $(this).on("click",function(){
+        var padre =  $(this).parent();
+        
+
+        
+        
+    });
+
+});
+
+function borrarProducto(){
+    galleta = new cookie();
+
+    
+
 }
