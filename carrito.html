@@ -12,8 +12,9 @@ además de la suma para los totales  -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/carrito.css">
 </head>
-<body>
+<body onload="obtenerDatosProducto()">
     <header>
         <div class="contenedor-arriba">
             <a href="index.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
@@ -43,23 +44,34 @@ además de la suma para los totales  -->
     <main>
         <h2>¡Carrito de compra!</h2>
         <div class="conten">
-            <!-- Aquí se actualizaría la cantidad de productos que ingresaran  -->
-            <article class="producto">
-                <div class="contenedor-img">
-                    <img src="img/producto1.png" alt="">
-                </div>
-                <div class="descripcion">
-                    <h3>NombreProducto</h3>
-                    <p>Descripción</p>
-                </div>
-            </article>
-
-            <!-- En está parte ira el total del precio y el total de los productos seleccionados  -->
-            <form >
-                <label>Total:$ </label>
-                <br>
-                <label>Productos seleccionados: </label>
-            </form>
+            <table id="tabla">
+                <thead>
+                    <th>Producto</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td><img src="img/producto1.png" alt=""></td>
+                        <td><p>Teclado gaming</p></td>
+                        <td><p>El teclado mecánico gaming Yeyian Spark Serie 2000 de 88 teclas - switch rojo - tecnología Anti-Ghosting y N-Key Rollover, esta diseñado con funciones innovadoras y avanzada technologia para tus intensas batallas durante largas horas de juego. </p></td>
+                        <td><p>3</p></td>
+                        <td><p>900</p></td>
+                        <td><a href="#"><i class="fa fa-minus-square" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/producto1.png" alt=""></td>
+                        <td><p>Teclado gaming</p></td>
+                        <td><p>El teclado mecánico gaming Yeyian Spark Serie 2000 de 88 teclas - switch rojo - tecnología Anti-Ghosting y N-Key Rollover, esta diseñado con funciones innovadoras y avanzada technologia para tus intensas batallas durante largas horas de juego. </p></td>
+                        <td><p>3</p></td>
+                        <td><p>900</p></td>
+                        <td><a href="#"><i class="fa fa-minus-square" aria-hidden="true"></i></a></td>
+                    </tr> -->
+                </tbody>
+            </table>
             
 
         </div>
@@ -69,5 +81,6 @@ además de la suma para los totales  -->
     </footer>
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>

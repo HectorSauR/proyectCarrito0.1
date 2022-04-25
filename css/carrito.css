@@ -1,0 +1,14 @@
+body table{
+    background: #e5e5e5;
+}
+
+body table th{
+    background: #FCA311;
+    color: #fff;
+}
+
+body table img {
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+}
