@@ -13,7 +13,7 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/contacto.css">
 </head>
-<body onload="nombuser()">
+<body id="cuerpo" onload="nombuser(), cargarFontusr()">
     <header>
         <div class="contenedor-arriba">
             <a href="inicio.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
@@ -51,9 +51,9 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
                 <div class="nombre">
                     <label for="txttamletra">Tamaño de letra:</label>
                     <div class="button">
-                        <input type="submit" value="Chico" /> 
-                        <input type="submit" value="Mediano" />
-                        <input type="submit" value="Grande" />  
+                        <input type="submit" value="Chico" id="fc"/> 
+                        <input type="submit" value="Mediano" id="fm"/>
+                        <input type="submit" value="Grande" id="fg"/>  
                     </div>
                 </div>
                 <div class="correo">
@@ -86,5 +86,6 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
     <script src="js/ususarios.js"></script>
+    <script src="js/configuracion.js"></script>
 </body>
 </html>
