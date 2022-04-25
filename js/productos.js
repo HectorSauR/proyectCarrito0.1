@@ -55,7 +55,7 @@ crearProducto("YEYIAN Teclado Gaming Spark (Rojo)",
 "producto1.png");
 crearProducto("GIGABYTE G5 KD",
 "15.6 pulgadas FHD 144Hz, Intel Core i5-11400H, NVIDIA GeForce RTX 3060 Laptop GPU 6GB GDDR6, 16GB de memoria, 512GB SSD, Win11 Home, laptop para juegos (G5 KD-52US123SO) "
-,"31,799.00",
+,31799.00,
 "producto2.png");
 crearProducto("Lámpara de Escritorio TXG",
 "Luz de Lectura con Brazo Oscilante de Metal, Base o Abrazadera Intercambiable, Lámpara de Mesa de Estudio Clásica con Clip de Arquitecto, Junta Múltiple, Brazo Ajustable (Negro) ",
@@ -91,6 +91,14 @@ var btnAgregarCarrito = $(".btn-agregar-carrito");
 btnAgregarCarrito.each(function(index,element,e){
     // console.log($(this).parent());
     $(this).on("click",function(){
+        var usc = new cookie();
+
+        usc.setNombre("uslogueado");
+        var uss = usc.obtenerDato;
+        if(uss.length > 15){
+            alert("Porfavor inicia sesion para agregar articulos al carrito");
+            return;
+        }
         var contImg = $(this).parent().parent().children('.contenedor-img');
         var contDesc =  $(this).parent();
         // 
@@ -118,10 +126,15 @@ function crearCookieProducto(nombre,desc,precio,img,id){
     var cadena = "";
     var repetida = false;
     var antGalleta = "";
+    var us = "";
     //selecciona una cadena dividiendola en trozos mediante el valor que se le especifica y lo guarda
     //en un array
     var array = document.cookie.split(";");
     
+    galleta.setNombre("uslogueado");
+
+    us = galleta.obtenerDato;
+
     for(var i = 0; i < array.length; i++){
         
         if(array[i].indexOf("carrito") == -1){
@@ -132,7 +145,7 @@ function crearCookieProducto(nombre,desc,precio,img,id){
         antGalleta = productos[0].substring(0,productos[0].indexOf("="));
         productos[0] = productos[0].substring(productos[0].indexOf("=")+1);
     
-        console.log(productos);
+        // console.log(productos);
 
         if(productos[0] == id){
             repetida = true;
@@ -150,7 +163,7 @@ function crearCookieProducto(nombre,desc,precio,img,id){
     }else{
         nombreGalleta += (contProductos+1).toString();
     }
-    cadena = id+"¿"+nombre + "¿"+desc +"¿"+ cant+ "¿"+precio + "¿" + img;
+    cadena = id+"¿"+nombre + "¿"+desc +"¿"+ cant+ "¿"+precio + "¿" + img + "¿" + us;
 
 
     // console.log(nombreGalleta + " contador " + contProductos);

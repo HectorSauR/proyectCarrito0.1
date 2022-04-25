@@ -18,3 +18,7 @@ body table img {
     margin-right: 20px;
     font-size: 20pt;
 }
+
+body table a{
+    color: red;
+}
