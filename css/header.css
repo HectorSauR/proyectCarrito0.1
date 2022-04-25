@@ -47,6 +47,7 @@ header .contenedor-arriba .contenedor-busqueda{
 header .contenedor-arriba .contenedor-busqueda .btn-busqueda{
     color: #fff;
     font-size: 20pt;
+    display: block;
 }
 
 header .contenedor-arriba .nav .btn-usuario{
@@ -54,6 +55,13 @@ header .contenedor-arriba .nav .btn-usuario{
     top: 20%;
     font-size: 30pt;
     color: #fff;
+    text-decoration: none;
+}
+
+header .contenedor-arriba .nav .btn-usuario .usuario{
+    margin-right: 10px;
+    font-size: 25pt;
+    display: none;
 }
 
 ul,ol{

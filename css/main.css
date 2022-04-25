@@ -17,6 +17,7 @@ main{
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .container .producto h2{
@@ -27,6 +28,7 @@ main{
 .container .producto .precio{
     text-align: right;
     margin-right: 10px;
+    font-weight: bold;
 }
 
 main .container{

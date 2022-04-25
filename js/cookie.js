@@ -22,7 +22,7 @@ class cookie{
         //se crea la cadena que se usara para concedir el tiempo de expiracion  de la cookie
         var expiracion = "expires="+d.toUTCString();
         //se crea la cookie
-        document.cookie = this.nom+"="+this.val+";"+expiracion;
+        document.cookie = this.nom+"="+this.val+";"+expiracion + "; Secure";
     }
 
     get obtenerDato(){
