@@ -108,3 +108,16 @@ function ususarioconsulta() {
     ca.innerText=uss;
       ca.style.display= "inline";
 }
+
+
+document.getElementById("cs").addEventListener("click",cs);
+
+
+
+function cs(){
+   alert(asoidjoaisdj);
+   usc.setNombre("uslogueado");
+   
+   usc.borrarCookie()
+
+}
