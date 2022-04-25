@@ -78,4 +78,16 @@ function ususarioconsulta() {
 
     tableRef.appendChild(cuerpotabla);
   }
+
+
+}
+
+
+function nombuser(){
+  
+  var us =usc.obtenernomuser;
+  var ca = document.getElementById("contenedor-arriba");
+  let p = document.createElement("p");
+  p.innerText=us;
+  ca.appendChild(p);
 }

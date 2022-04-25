@@ -10,11 +10,13 @@ function user() {
     
     usc.setNombre(us);
     if (contr == usc.obtenerDatoLogin) {
-      alert("HOLA DE NUEVO");
+      window.location.assign("http://127.0.0.1:5500/registro.html");
     } else {
       alert("CONTRASEÑA INCORRECTA");
     }
 
-     //location.href =""
   }
+
+
+  
   

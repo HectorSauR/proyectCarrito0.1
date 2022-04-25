@@ -42,7 +42,7 @@
 
 }
 
-.login input[type="submit"], .login input[type="reset"] {
+.login input[type="button"], .login input[type="reset"] {
   margin-bottom: 0px;
   background: #fca311;
   border: none;
