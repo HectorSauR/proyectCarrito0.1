@@ -13,19 +13,20 @@ además de que muestre los datos que se integren en los txt box  -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/contacto.css">
 </head>
-<body>
+<body onload="nombuser()">
     <header>
         <div class="contenedor-arriba">
-            <a href="index.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
+            <a href="inicio.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn-usuario"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+
                   <ul>
-                    <li><a href="#">CERRAR SESION </a></li>
-                    <li><a href="#">CONFIGURACION</a></li>
+                    <li><a href="index.html">CERRAR SESION </a></li>
+                    <li><a href="configuration.html">CONFIGURACION</a></li>
                   </ul>
                 </li>
             </ul>
@@ -82,5 +83,7 @@ además de que muestre los datos que se integren en los txt box  -->
     </footer>
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
+    <script src="js/ususarios.js"></script>
+
 </body>
 </html>

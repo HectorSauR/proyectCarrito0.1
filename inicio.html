@@ -1,5 +1,3 @@
-<!-- Al final mejor lo hice en tú rama, ya que están aqui los css
-y es más fácil xd, al final deje la otra rama pero la neta no supe como eliminarla xD perdon, toy menso   -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +9,6 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body onload="nombuser()">
     <header>
@@ -20,18 +17,17 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
+            
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn-usuario">
-                        <span class="usuario">Nombre</span>
-                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                    </a>
+                    <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <ul>
                     <li><a href="index.html">CERRAR SESION </a></li>
                     <li><a href="configuration.html">CONFIGURACION</a></li>
                   </ul>
                 </li>
             </ul>
+           
         </div>
         <div class="contenedor-abajo">
             <a href="carrito.html" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -44,47 +40,33 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
         </div>
     </header>
     <main>
-        <h2>¡Configuracion!</h2>
-        <div class="conten">
-            <!-- Aquí se configuran los cokiees  -->
-            <div class="txtcontact">
-                <div class="nombre">
-                    <label for="txttamletra">Tamaño de letra:</label>
-                    <div class="button">
-                        <input type="submit" value="Chico" /> 
-                        <input type="submit" value="Mediano" />
-                        <input type="submit" value="Grande" />  
+        <h2>¡Bienvenido!</h2>
+        <div class="container">
+            <h3>Lista de productos</h3>
+            <div class="contenedor-productos" id="contenedor-productos">
+                <!-- <article class="producto" id="producto">
+                    <div class="contenedor-img">
+                        <img src="img/producto1.png" alt="">
                     </div>
-                </div>
-                <div class="correo">
-                    <label for="txttema">Cambiar tema: </label>
-                    <div class="button">
-                        <!-- Los colores son de ejemplo, puedes poner otros -->
-                        <input type="submit" value="Verde" /> 
-                        <input type="submit" value="Rojo" />
-                        <input type="submit" value="Azul" />  
+                    <div class="contenedor-descripcion">
+                        <h2 id="nombre-producto">NombreProducto</h2>
+                        <p class="descripcion" id="descripcion-producto">Descripción</p>
+                        <p class="precio" id="precio-producto">$150</p>
+                        <a href="#" class="btn-agregar-carrito" id="btn-agregar-carrito">Agregar al Carrito</a>
                     </div>
-                </div>
-                
+                </article> -->
                 
             </div>
-            <div class="button">
-                <input type="submit" value="Guardar cokiee" /> 
-                <input type="submit" value="Borrar cokiee" /> 
-            </div>
-            <!-- En está parte ira el total del precio y el total de los productos seleccionados  -->
-            <form >
-                
-            </form>
-            
-
         </div>
     </main>
+    <!-- <button id="agregar">Agregar</button> -->
     <footer>
         <p>made by ENVIPROPMENT</p>
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
+    <script src="js/productos.js"></script>
     <script src="js/ususarios.js"></script>
 </body>
 </html>

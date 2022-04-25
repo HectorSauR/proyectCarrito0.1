@@ -13,26 +13,39 @@ function crearusuario() {
   let us = document.getElementById("txtusuario").value;
   let contr = document.getElementById("txtcontr").value;
   var array = document.cookie.split(";");
+
+  if(us == "" || us == null){
+    return alert("Porfavor ingresa usuario");
+  }
+  if(contr == "" || contr == null){
+    return alert("Porfavor ingresa contraseña");
+  }
+  
   for (var i = 0; i < array.length; i++) {
     var c = array[i];
     while (c.charAt(0) == " ") {
       c = c.substring(1);
     }
     if (c.substring(0, us.length) == us) {
-      return alert(
-        "EL USUARIO YA SE ENCUENTRA EN USO BUSCA OTRO NOMBRE DE USUSARIO SALUDOS"
-      );
+      alert("EL USUARIO YA SE ENCUENTRA EN USO BUSCA OTRO NOMBRE DE USUSARIO SALUDOS");
+      return 
     }
   }
   alert("USUSARIO REGISTRADO");
   usc.setValoresCookie(us, contr, 1);
-  // window.location.assign("http://127.0.0.1:5500/"); 
+  window.location.assign("http://127.0.0.1:5500/inicio.html"); 
 }
 
 
 function eliminarusuario() {
   let us = document.getElementById("txtusuario").value;
   let contr = document.getElementById("txtcontr").value;
+  if(us == "" || us == null){
+    return alert("Porfavor ingresa usuario");
+  }
+  if(contr == "" || contr == null){
+    return alert("Porfavor ingresa contraseña");
+  }
   usc.setNombre(us);
   if (contr == usc.obtenerDato) {
     alert("USUSARIO ELIMINADO");
@@ -50,41 +63,48 @@ function ususarioconsulta() {
   
 
   var array = document.cookie.split(";");
-  for (var i = 1; i < array.length; i++) {
+  for (var i = 0; i < array.length; i++) {
     
-    var c = array[i];
+
    
-    while (c.charAt(0) == " ") {
-      c = c.substring(1);
+      var c = array[i];
+   
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+        
+      }
       
+      
+      var array2 = c.split("=");
+      let fila = document.createElement("tr");
+      console.log(array2);
+      if(array2[1].length>20 || array2[0]=="uslogueado") {
+        continue;
+      }else{
+        let datos = document.createElement("td");
+        datos.innerText = array2[0];
+        fila.appendChild(datos);
+    
+        datos = document.createElement("td");
+        datos.innerText = array2[1];
+        fila.appendChild(datos);
+    
+        cuerpotabla.appendChild(fila);
+    
+        tableRef.appendChild(cuerpotabla);
+      }
     }
-
-    var array2 = c.split("=");
-
-    let fila = document.createElement("tr");
-
-    let datos = document.createElement("td");
-    datos.innerText = array2[0];
-    fila.appendChild(datos);
-
-    datos = document.createElement("td");
-    datos.innerText = array2[1];
-    fila.appendChild(datos);
-
-    cuerpotabla.appendChild(fila);
-
-    tableRef.appendChild(cuerpotabla);
-  }
-
+  
+    
+    
 
 }
 
-function nombuser(){
-  usc.setNombre("uslogueado");
-  var uss = usc.obtenerDato;
-  var ca = document.getElementById("btn-usuario");
-  let sp = document.createElement("span");
-  sp.innerText=uss;
-  ca.appendChild(sp);
+ 
+  function nombuser(){
+    usc.setNombre("uslogueado");
+    var uss = usc.obtenerDato;
+    var ca = document.querySelector(".usuario");
+    ca.innerText=uss;
+      ca.style.display= "inline";
 }
-

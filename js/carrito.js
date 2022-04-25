@@ -1,4 +1,5 @@
 var tabla = document.getElementById("tabla");
+var total = document.querySelector(".total-pagar");
 
 function obtenerDatosProducto(){
     var galleta = new cookie();
@@ -14,13 +15,14 @@ function obtenerDatosProducto(){
         }
         
         var productos = array[i].split("¿");
-    
+        
+        calcTotalaPagar(productos);
         agregarProductoTabla(productos);
 
 
     }
     
-
+    total.innerHTML = "$"+totalPagar;
 
 
 }
@@ -39,10 +41,10 @@ function agregarProductoTabla(datos){
         <td>
             <p>${datos[2]}</p>
         </td>
-        <td>
+        <td class = "cant">
             <p>${datos[3]}</p>
         </td>
-        <td>
+        <td class= "precio">
             <p>${datos[4]}</p>
         </td>
         <td>
@@ -50,4 +52,13 @@ function agregarProductoTabla(datos){
         </td>
     `
     tabla.appendChild(row);
+}
+var totalPagar = 0.0;
+
+function calcTotalaPagar(prod){
+    
+    precio = prod[4].substring(1);
+
+    totalPagar += parseFloat(prod[3],10) * parseFloat(precio,10);
+    // console.log(prod[4] );
 }
