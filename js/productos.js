@@ -65,6 +65,14 @@ crearProducto("Steren SHOME-120 Foco LED Wi-Fi multicolor",
 "10W, 2.4 GHz, luz RGB, dimeable desde app, para socket E27, compatible con Alexa y Google Assistant, temporizador ",
 199.00,
 "producto4.png");
+crearProducto("Power Bank 10000 mah Ultra Slim de Bateria Portatil",
+"con Cable Micro USB 20cm, Puertos USB C LED Indicadores de Carga Powerbank 10000 Compatible para IP Samsung Xiaomi, Negro",
+256.00,
+"producto5.png");
+crearProducto("Apple iPhone 11 Pro",
+"64 GB Color Plata (Reacondicionado)",
+11599.99,
+"producto6.png");
 
 
 // boton.addEventListener('click', function(){
