@@ -99,13 +99,13 @@ class cookie{
                 
             }
         }
-        return alert( "No se a encontrado una cookie con ese nombre");
+        return alert( "No se a encontrado un usuario con ese nombre");
     }
 
     get obtenernomuser(){
         //empezando la cadena para la obtencion del dato
         var nom = this.nom + "=";
-       
+       alert(nom);
         //selecciona una cadena dividiendola en trozos mediante el valor que se le especifica y lo guarda
         //en un array
         var array = document.cookie.split(";");

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/registro.css">
     <link rel="stylesheet" href="css/tabla.css">
     <title>Document</title>
-</head>
-<body onload="ususarioconsulta(), nombuser()">
+                           <!--,nombuser()" -->
+</head>    
+<body onload="ususarioconsulta()"  >
 
     <header>
         <div class="contenedor-arriba" id="contenedor-arriba">
@@ -20,7 +21,7 @@
             
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn-usuario"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    <a href="#" class="btn-usuario" id="btn-usuario"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <ul>
                     <li><a href="#">INICIAR SESION </a></li>
                     <li><a href="#">CONFIGURACION</a></li>
@@ -50,8 +51,8 @@
         <label for="txtcontr">Contraseña</label>
         <input type="password"  name="txtcontr" id="txtcontr" size="20" required placeholder="Ingrese contraseña">
         <br>
-         <input type="submit" value="Registrarse" id="btn-registrar">
-         <input type="submit" value="Borrar mi ususario" id="btn-borrarus">
+         <input type="button" value="Registrarse" id="btn-registrar">
+         <input type="button" value="Borrar mi ususario" id="btn-borrarus">
     <!-- <br> -->
 </form>
 

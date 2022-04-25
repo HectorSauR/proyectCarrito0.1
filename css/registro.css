@@ -41,7 +41,7 @@
   
   }
   
-  .registro input[type="submit"], .registro input[type="reset"] {
+  .registro input[type="button"], .registro input[type="reset"] {
     margin-bottom: 0px;
     background: #fca311;
     border: none;
