@@ -52,30 +52,38 @@ function ususarioconsulta() {
   var array = document.cookie.split(";");
   for (var i = 1; i < array.length; i++) {
     
-    var c = array[i];
+
    
-    while (c.charAt(0) == " ") {
-      c = c.substring(1);
+      var c = array[i];
+   
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+        
+      }
       
+      
+      var array2 = c.split("=");
+      let fila = document.createElement("tr");
+      
+      if(array2[1].length>250 || array2[0]=="uslogueado") {
+        return
+      }else{
+        let datos = document.createElement("td");
+        datos.innerText = array2[0];
+        fila.appendChild(datos);
+    
+        datos = document.createElement("td");
+        datos.innerText = array2[1];
+        fila.appendChild(datos);
+    
+        cuerpotabla.appendChild(fila);
+    
+        tableRef.appendChild(cuerpotabla);
+      }
     }
-
-    var array2 = c.split("=");
-
-    let fila = document.createElement("tr");
-
-    let datos = document.createElement("td");
-    datos.innerText = array2[0];
-    fila.appendChild(datos);
-
-    datos = document.createElement("td");
-    datos.innerText = array2[1];
-    fila.appendChild(datos);
-
-    cuerpotabla.appendChild(fila);
-
-    tableRef.appendChild(cuerpotabla);
-  }
-
+  
+    
+    
 
 }
 
