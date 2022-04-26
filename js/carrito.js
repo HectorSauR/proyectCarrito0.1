@@ -65,6 +65,8 @@ function obtenerDatosProducto(){
                     console.log("aaaa");
                     continue;  
                 }
+
+                console.log(nombreCookie.trim());
                 // console.log(nombreCookie);
                 // cooki.setNombre(nombreCookie);
                 // cooki.borrarCookie();

@@ -7,6 +7,10 @@ body table th{
     color: #fff;
 }
 
+body table td{
+    width: 20%;
+}
+
 body table img {
     width: 200px;
     height: 200px;
