@@ -13,9 +13,9 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/contacto.css">
 </head>
-<body id="cuerpo" onload="nombuser(), cargarFontusr()">
+<body id="cuerpo" onload="nombuser(), cargarFontusr(),cargartemausr()">
     <header>
-        <div class="contenedor-arriba">
+        <div class="contenedor-arriba" id="contenedor-arriba">
             <a href="inicio.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -33,7 +33,7 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
                 </li>
             </ul>
         </div>
-        <div class="contenedor-abajo">
+        <div class="contenedor-abajo" id="contenedor-abajo">
             <a href="carrito.html" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -57,15 +57,14 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
                 <div class="correo">
                     <label for="txttema">Cambiar tema: </label>
                         <!-- Los colores son de ejemplo, puedes poner otros -->
-                    <input class="button" type="button" value="Verde" /> 
-                    <input class="button" type="button" value="Rojo" />
-                    <input class="button" type="button" value="Azul" />  
+                    <input class="button" type="button" value="TEMA1(ROJO)" id="tr"/> 
+                    <input class="button" type="button" value="TEMA2(AZUL)" id="ta"/>
+                    <input class="button" type="button" value="TEMA3(VERDE)" id="tv" />  
                 </div>
                 
                 
             </div>
-            <input class="button" type="button" value="Guardar cokiee" /> 
-            <input class="button" type="button" value="Borrar cokiee" /> 
+            <input class="button" type="button" value="Default" id="btn-defaultconf"/> 
             <!-- En está parte ira el total del precio y el total de los productos seleccionados  -->
             <form >
                 
@@ -74,7 +73,7 @@ y es más fácil xd, al final deje la otra rama pero la neta no supe como elimin
 
         </div>
     </main>
-    <footer>
+    <footer id="pie">
         <p>made by ENVIPROPMENT</p>
     </footer>
     <script src="js/cookie.js"></script>

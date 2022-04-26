@@ -14,9 +14,9 @@ además de la suma para los totales  -->
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/carrito.css">
 </head>
-<body onload="obtenerDatosProducto(), nombuser()">
+<body onload="obtenerDatosProducto(), nombuser(), cargarFontusr(),cargartemausr()"  id="cuerpo">
     <header>
-        <div class="contenedor-arriba">
+        <div class="contenedor-arriba" id="contenedor-arriba">
             <a href="inicio.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -32,7 +32,7 @@ además de la suma para los totales  -->
                 </li>
             </ul>
         </div>
-        <div class="contenedor-abajo">
+        <div class="contenedor-abajo" id="contenedor-abajo">
             <a href="carrito.html" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -78,7 +78,7 @@ además de la suma para los totales  -->
 
         </div>
     </main>
-    <footer>
+    <footer id="pie">
         <p>made by ENVIPROPMENT</p>
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -86,6 +86,7 @@ además de la suma para los totales  -->
     <script src="js/programa.js"></script>
     <script src="js/carrito.js"></script>
     <script src="js/ususarios.js"></script>
+    <script src="js/confpag.js"></script>
 
 </body>
 </html>

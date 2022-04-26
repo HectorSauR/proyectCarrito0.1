@@ -45,6 +45,7 @@ function crearProducto(nombre,descripcion,precio,nombreImg) {
     producto.appendChild(contDesc);
 
     contProductos.appendChild(producto);
+    
 }
 
 

@@ -13,9 +13,9 @@ además de que muestre los datos que se integren en los txt box  -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/contacto.css">
 </head>
-<body onload="nombuser()">
+<body onload="nombuser(), cargarFontusr(),cargartemausr()" id="cuerpo">
     <header>
-        <div class="contenedor-arriba">
+        <div class="contenedor-arriba" id="contenedor-arriba">
             <a href="inicio.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -31,7 +31,7 @@ además de que muestre los datos que se integren en los txt box  -->
                 </li>
             </ul>
         </div>
-        <div class="contenedor-abajo">
+        <div class="contenedor-abajo" id="contenedor-abajo">
             <a href="carrito.html" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -78,12 +78,13 @@ además de que muestre los datos que se integren en los txt box  -->
         </div>
         
     </main>
-    <footer>
+    <footer id="pie">
         <p>made by ENVIPROPMENT</p>
     </footer>
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
     <script src="js/ususarios.js"></script>
     <script src="js/contacto.js"></script>
+    <script src="js/confpag.js"></script>
 </body>
 </html>

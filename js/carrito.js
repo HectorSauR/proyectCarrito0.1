@@ -123,7 +123,4 @@ function calcTotalaPagar(prod){
 
 function borrarProducto(){
     galleta = new cookie();
-
-    
-
 }

@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
-<body onload="nombuser()">
+<body onload="nombuser(), cargarFontusr(),cargartemausr()" id="cuerpo">
     <header>
-        <div class="contenedor-arriba">
+        <div class="contenedor-arriba" id="contenedor-arriba">
             <a href="inicio.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -30,8 +30,8 @@
             </ul>
            
         </div>
-        <div class="contenedor-abajo">
-            <a href="carrito.html" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        <div class="contenedor-abajo" id="contenedor-abajo">
+            <a href="carrito.html" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"> </i></a>
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Inicio</a></li>
@@ -61,7 +61,7 @@
         </div>
     </main>
     <!-- <button id="agregar">Agregar</button> -->
-    <footer>
+    <footer id="pie">
         <p>made by ENVIPROPMENT</p>
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -69,5 +69,6 @@
     <script src="js/programa.js"></script>
     <script src="js/productos.js"></script>
     <script src="js/ususarios.js"></script>
+    <script src="js/confpag.js"></script>
 </body>
 </html>
