@@ -29,7 +29,7 @@ function ususarioconsulta() {
     var array2 = c.split("=");
     let fila = document.createElement("tr");
     // console.log(array2);
-    if (array2[1].length > 20 || array2[0] == "uslogueado") {
+    if (array2[1].length > 18  || array2[1]=="large" || array2[1]=="medium" || array2[1]=="small" || array2[1]=="red" || array2[1]=="blue"|| array2[1]=="green") {
       continue;
     } else {
       let datos = document.createElement("td");
