@@ -169,6 +169,7 @@ function crearCookieProducto(nombre,desc,precio,img,id){
     // console.log(nombreGalleta + " contador " + contProductos);
 
     galleta.setValoresCookie(nombreGalleta,cadena,1);
+    
     // window.location.assign("http://127.0.0.1:5500/carrito.html");
 }
 

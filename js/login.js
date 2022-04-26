@@ -15,6 +15,10 @@ function user() {
   if(contr == "" || contr == null){
     return alert("Porfavor ingresa contraseña");
   }
+
+  if(us.length > 15){
+    return alert("Porfavor que el usuario no sea mayor a 15 caracteres");
+  }
   
     
     usc.setNombre(us);
