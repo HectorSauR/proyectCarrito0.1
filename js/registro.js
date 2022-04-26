@@ -25,15 +25,20 @@ function crearusuario() {
 
   for (var i = 0; i < array.length; i++) {
     var c = array[i];
+
     while (c.charAt(0) == " ") {
       c = c.substring(1);
     }
-    if (c.substring(0, us.length) == us) {
+   
+    var array2 = c.split("=");
+    
+    if(us==array2[0]){
       alert(
-        "EL USUARIO YA SE ENCUENTRA EN USO BUSCA OTRO NOMBRE DE USUSARIO SALUDOS"
+         "EL USUARIO YA SE ENCUENRA EN USO, BUSCA OTRO NOMBRE DE USUSARIO SALUDOS"
       );
       return;
     }
+
   }
   alert("Usuario REGISTRADO");
   usc.setValoresCookie(us, contr, 1);
