@@ -163,6 +163,7 @@ function crearCookieProducto(nombre,desc,precio,img,id){
     }else{
         nombreGalleta += (contProductos+1).toString();
     }
+    
     cadena = id+"¿"+nombre + "¿"+desc +"¿"+ cant+ "¿"+precio + "¿" + img + "¿" + us;
 
 
