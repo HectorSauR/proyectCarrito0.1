@@ -41,7 +41,7 @@ además de que muestre los datos que se integren en los txt box  -->
             </ul>
         </div>
     </header>
-    <main>
+    <main class="main">
         <h2>¡Contactanos!</h2>
         <div class="conten">
             <!-- En toda está zona es donde está la imagen y los datos de la empresa -->
@@ -54,7 +54,7 @@ además de que muestre los datos que se integren en los txt box  -->
                     <p>Empresa desarrolladora de software</p>
                 </div>
             </article>
-            <form>
+            <form class="formulario">
                 <!-- En está parte están los text box y buttons  -->
                 <div class="txtcontact">
                     <div class="nombre">
@@ -63,19 +63,19 @@ además de que muestre los datos que se integren en los txt box  -->
                     </div>
                     <div class="correo">
                         <label for="txtcorreo">Correo: </label>
-                        <input id="txtcorreo" type="email" name="correo"/>
+                        <input id="txtcorreo" type="email" name="correo" required/>
                     </div>
-                    <textarea name="mensajee" placeholder="Mensaje:"></textarea>
+                    <textarea id="txtmensaje"name="mensajee" placeholder="Mensaje:" required></textarea>
                 </div>
                 
-                <div class="button">
-                    <input type="submit" value="Enviar" /> 
-                    <input type="reset" value="Limpiar"/> 
-                </div>
+                <input class="button" type="submit" value="Enviar"/> 
+                <input class="button" type="reset" value="Limpiar"/> 
                 
             </form> 
-            
         </div>  
+        <div class="enviado">
+            
+        </div>
         
     </main>
     <footer>
@@ -84,6 +84,6 @@ además de que muestre los datos que se integren en los txt box  -->
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
     <script src="js/ususarios.js"></script>
-
+    <script src="js/contacto.js"></script>
 </body>
 </html>

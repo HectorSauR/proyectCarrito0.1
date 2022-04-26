@@ -58,12 +58,13 @@ main .conten .txtcontact >*{
 
 main .conten .button{
     margin-bottom: 10px;
-}
-
-main .conten .button >*{
+    margin-right: 10px;
     background: #fca311;
     color: white;
+    padding: 5px 10px;
+    cursor:pointer;
 }
+
 main .conten{
     background: #e5e5e5;
     text-align: center;
@@ -74,3 +75,20 @@ main .conten{
     margin: 0 auto;
     padding: 10px;
 }
+
+.enviado {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(146, 187, 79, 0.2);
+    margin-top: 10px;
+    display: none;
+}
+
+.enviado h3, .enviado p{
+    font-size: 14pt;
+    display: inline-block;
+    margin-right: 10px;
+}
+
