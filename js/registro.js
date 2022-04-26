@@ -54,6 +54,11 @@ function eliminarusuario() {
   usc.setNombre(us);
   if (contr == usc.obtenerDato) {
     alert("USUSARIO ELIMINADO");
+    usc.setNombre(us);
+    usc.borrarCookie();
+    usc.setNombre(us+"conf1");
+    usc.borrarCookie();
+    usc.setNombre(us+"conf2");
     usc.borrarCookie();
   } else {
     alert("CONTRASEÑA INCRRECTA NO SE PUEDE ELIMINAR");

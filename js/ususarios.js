@@ -55,7 +55,7 @@ function nombuser() {
   if (uss.length > 15) {
     console.log(uss);
     ca.style.display = "none";
-    window.location.assign("index.html"); 
+    window.location.assign("login.html"); 
     return;
   }
   ca.innerText = uss;
