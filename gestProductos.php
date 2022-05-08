@@ -45,26 +45,21 @@
 <div class="main">
         
 
-        <form class="contenido" action="registrarP.php" method="post" enctype="multipart/form-data">
+        <form class="contenido" action="PHP/Productos/registrarproducto.php" method="post" enctype="multipart/form-data">
+            
             <div class="input">
                
               <div  class="textos">
 
                   <h1>REGISTRO DE PRODUCTO</h1>
-                    <label for="name">Id categotria: </label>
-                    <input type="text" name="txtcat" id="txtnom">
-                    <label for="name">nombre: </label>
-                    <input type="text" name="txtnom" id="txtdesc">
-                    <label for="name">Precio Compra: </label>
-                    <input type="text" name="txtprecc" id="txtprecc">
-                    <label for="name">precio: </label>
-                    <input type="text" name="txtprecv" id="txtcat">
-                    <label for="name">stock: </label>
-                    <input type="text" name="txtstock" id="txtcant">
-                    <label for="name">Stock minimo: </label>
-                    <input type="text" name="txtstockm" id="txtundm">
-                    <label for="name">Estatus: </label>
-                    <input type="text" name="txtstatus" id="txtstatus">
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="txtnombre" id="txtnombre">
+                    <label for="name">Descripcion: </label>
+                    <input type="text" name="txtdescr" id="txtdescr">
+                    <label for="name">Precio: </label>
+                    <input type="number" name="txtprec" id="txtprec">
+                    <label for="name">Cantidad: </label>
+                    <input type="number" name="txtcant" id="txtcant">
                    
                     <input type="submit" class="btn" value="Registrar">
                  </div>
@@ -77,7 +72,7 @@
             <div class="imagen" >
                 <div class="imgelg" action="registrarimagen.php" method="post" >
                     <div class="img-mostrar">
-                    <img src="../../recursos/imagenes/regalo.png" alt="" class="imagenselec" name="imagenselec">
+                    <img src="img/regalo.png" alt="" class="imagenselec" name="imagenselec">
                     </div>
                     <!-- <button class="examinar">examinar</button> -->
                     <input type="file" name="img-elg" id="img-elg" class="img-elg">
@@ -87,10 +82,59 @@
               
             </div>
             
-        </form>   
-    </div>
-    <script src="js/cookie.js"></script>
-    <script src="js/admin.js"></script>
+        </form> 
+        
 
+        <form class="contenido2" action="PHP/Productos/registrarproducto.php" method="post" enctype="multipart/form-data">
+            
+            <div class="input2">
+               
+              <div  class="textos2">
+
+                  <h1>MODIFICAR PRODUCTO</h1>
+                  
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="txtnombre" id="txtnombre">
+                    <label for="name">Descripcion: </label>
+                    <input type="text" name="txtdescr" id="txtdescr">
+                    <label for="name">Precio: </label>
+                    <input type="number" name="txtprec" id="txtprec">
+                    <label for="name">Cantidad: </label>
+                    <input type="number" name="txtcant" id="txtcant">
+                   
+                    <input type="submit" class="btn" value="Registrar">
+                 </div>
+               
+                
+            </div>
+
+            
+
+            <div class="imagen2" >
+                <div class="imgelg2" action="registrarimagen.php" method="post" >
+                    <div class="img-mostrar2">
+                    <img src="img/regalo.png" alt="" class="imagenselec2" name="imagenselec">
+                    </div>
+                    <!-- <button class="examinar">examinar</button> -->
+                    <input type="file" name="img-elg" id="img-elg" class="img-elg2">
+
+                    
+                 </div>
+              
+            </div>
+            
+        </form> 
+        
+    </div>
+
+    <footer id="pie">
+        <p>made by ENVIPROPMENT</p>
+    </footer>
+   
+    <script src="js/cookie.js"></script>
+    <script src="js/ususarios.js"></script>
+    <script src="js/confpag.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="PHP/Productos/regprod.js"></script>
 </body>
 </html>
