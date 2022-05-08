@@ -16,7 +16,6 @@
   align-items: center;
  text-align: center;
  box-shadow: 7px 13px 37px #000;
- 
 }
 .login h4{
   margin-bottom: 15px;
@@ -40,10 +39,15 @@
 
 }
 
+
 .login input[type="button"], .login input[type="reset"] {
   margin-bottom: 0px;
   background: #fca311;
   border: none;
   border-radius: 4px;
   padding: 12px;
+}
+
+.login input[type="button"]:hover, .login input[type="reset"]:hover {
+  background: #24303c;
 }

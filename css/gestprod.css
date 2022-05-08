@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --ColorPrincipal: #fff;
+  --ColorSecundario: black;
+
+
+  --BorderRadius: 6px;
+  --border: 1.5px;
+  --Padding: 5px;
+  --LetterSpacing: 3px;
+  --Margin: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--ColorPrincipal);
+}
+
+.main{
+  margin-top: 104.17px;
+  height: 100%;
+}
+
+
+.main .contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main .contenido .input {
+  width: 80%;
+}
+.main .contenido .input .textos{
+
+  width: 100%;
+  align-items: center;
+  background: #e5e5e5;
+  margin-left: 35px;
+  border-radius: 20px;
+  box-shadow: 7px 13px 37px #000;
+
+}
+
+
+.main h1{
+  margin-left: 90px;
+}
+
+.main .contenido .input .textos label,.main .contenido .input .textos input{
+   margin-top: 3px;
+  display: block;
+  margin-left: 120px;
+  
+}
+
+.main .contenido .input .textos label{
+  color: black;
+
+}
+
+.main .contenido .input .textos input{
+  padding: 5px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+
+.main .contenido .input .textos input[type="submit"]{
+  padding: 5px;
+  width: 30%;
+  border-radius: 10px;
+}
+
+
+.main .contenido .input .textos input[type="submit"] {
+    margin-top: 15px;
+    background: #fca311;
+  border: 2px solid black;
+}
+.main .contenido .input .textos input[type="submit"]:hover {
+    background: #24303c;
+}
+
+.main .contenido .imagen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ padding: 5px;
+ width: 90%;
+
+}
+
+.main .contenido .imagen .imgelg{
+  width: 100% ;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 7px;
+  background: #e5e5e5;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.main .contenido .imagen .imgelg input,.main .contenido .imagen .imgelg img{
+ display: block;
+ margin: 20px auto;
+}
+
+.main .contenido .imagen .imgelg img{
+    width: 150px;
+}
+
+.main .contenido .imagen .imgelg input[type="file"]{
+    background: #fca311;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.img-elg{
+  display: none;
+}
+
+
+ /*nav .nav-enlaces li a:hover {}*/
+
+
+
+
+
+/*RESPONSIVE (MOVIL Y TABLET)
+@media (max-width:600px) {
+  nav {
+    position: fixed;
+    background-color: var(--ColorPrincipal);
+    top: 40px;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform .5s;
+  }
+
+  .showandhide {
+    transform: translateX(0);
+  }
+
+  nav .nav-enlaces li ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  nav .nav-enlaces {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%
+  }
+
+  /*nav .nav-enlaces li a {}
+
+  .btn-menu {
+    display: block;
+  }
+}
+
+*/

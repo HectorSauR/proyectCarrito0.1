@@ -1,4 +1,6 @@
+
 class cookie{
+   
     //Funcion hecha para la creacion de una cookie
     //nombre = nombre con el que se identificara la cookie
     //valor = valor que contendrá la cookie
@@ -22,7 +24,7 @@ class cookie{
         //se crea la cadena que se usara para concedir el tiempo de expiracion  de la cookie
         var expiracion = "expires="+d.toUTCString();
         //se crea la cookie
-        document.cookie = this.nom+"="+this.val+";"+expiracion;
+        document.cookie = this.nom+"="+this.val+";"+expiracion+";path=/";
     }
 
     get obtenerDato(){
@@ -99,7 +101,7 @@ class cookie{
                 
             }
         }
-        return alert( "No se a encontrado un usuario con ese nombre");
+       // return alert( "No se a encontrado un usuario con ese nombre");
     }
 
     get obtenernomuser(){
