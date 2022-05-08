@@ -45,7 +45,6 @@ function crearProducto(nombre,descripcion,precio,nombreImg) {
     producto.appendChild(contDesc);
 
     contProductos.appendChild(producto);
-    
 }
 
 
@@ -152,7 +151,7 @@ function crearCookieProducto(nombre,desc,precio,img,id){
             repetida = true;
             cant = parseInt(productos[3],10);
             break;
-        }
+        } 
 
         contProductos++;
 
@@ -164,14 +163,13 @@ function crearCookieProducto(nombre,desc,precio,img,id){
     }else{
         nombreGalleta += (contProductos+1).toString();
     }
-    
     cadena = id+"¿"+nombre + "¿"+desc +"¿"+ cant+ "¿"+precio + "¿" + img + "¿" + us;
 
 
     // console.log(nombreGalleta + " contador " + contProductos);
 
     galleta.setValoresCookie(nombreGalleta,cadena,1);
-    
+
     // window.location.assign("http://127.0.0.1:5500/carrito.html");
 }
 
