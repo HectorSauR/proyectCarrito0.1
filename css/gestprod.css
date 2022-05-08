@@ -156,7 +156,7 @@ body {
   margin-left: 90px;
 }
 
-.main .contenido2 .input2 .textos2 label,.main .contenido2 .input2 .textos2 input{
+.main .contenido2 .input2 .textos2 label,.main .contenido2 .input2 .textos2 input,.main .contenido2 .input2 .textos2 select{
    margin-top: 3px;
   display: block;
   margin-left: 120px;
@@ -168,7 +168,7 @@ body {
 
 }
 
-.main .contenido2 .input2 .textos2 input{
+.main .contenido2 .input2 .textos2 input,.main .contenido2 .input2 .textos2 select{
   padding: 5px;
   width: 50%;
   border-radius: 10px;

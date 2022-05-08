@@ -1,3 +1,8 @@
+
+<?php
+require "PHP/productos/modprdfunciones.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +56,7 @@
                
               <div  class="textos">
 
-                  <h1>REGISTRO DE PRODUCTO</h1>
+                  <h1>Modificar Producto</h1>
                     <label for="name">Nombre: </label>
                     <input type="text" name="txtnombre" id="txtnombre">
                     <label for="name">Descripcion: </label>
@@ -85,14 +90,26 @@
         </form> 
         
 
-        <form class="contenido2" action="PHP/Productos/registrarproducto.php" method="post" enctype="multipart/form-data">
+        <form class="contenido2" action="PHP/Productos/modpro.php" method="post" enctype="multipart/form-data">
             
             <div class="input2">
                
               <div  class="textos2">
 
                   <h1>MODIFICAR PRODUCTO</h1>
-                  
+
+                    <label for="name">id: </label>
+                    <select name="idProd" id="idProd">
+                         
+                <option value="#">SELECCIONA UN ID</option>
+
+                <?php
+                            foreach ($datos as $dat) {
+                                echo '<option value="'.$dat['idproducto'].'">'.$dat['idproducto'].'</option>';
+                            }//end foreach
+                        ?>
+                    </select>
+                    
                     <label for="name">Nombre: </label>
                     <input type="text" name="txtnombre" id="txtnombre">
                     <label for="name">Descripcion: </label>
@@ -101,7 +118,10 @@
                     <input type="number" name="txtprec" id="txtprec">
                     <label for="name">Cantidad: </label>
                     <input type="number" name="txtcant" id="txtcant">
-                   
+                    <label for="name">Status: </label>
+                    <input type="number" name="txtstatus" id="txtstatus">
+
+                
                     <input type="submit" class="btn" value="Registrar">
                  </div>
                

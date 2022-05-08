@@ -22,9 +22,9 @@ if($nombre ==""  || $descr=="" || $precio=="" || $cantidad==""){
 
 
 
-$regproducto = "INSERT INTO productos VALUES (?,?,?,?,?,?)";
+$regproducto = "INSERT INTO productos VALUES (?,?,?,?,?,?,?)";
 $consulta = $conexion->prepare($regproducto);
-$arregloprod = array(null,$nombre,$descr,$precio,$cantidad,$pathimg);
+$arregloprod = array(null,$nombre,$descr,$precio,$cantidad,1,$pathimg);
 $res = $consulta->execute($arregloprod);
 //$regproducto = "INSERT INTO productos VALUES ('$nombre','$decripcion','$descr','$precio','$cantidad','$cantidad','$unidadM','$status')";
 //$Execute = $conexion->query($regproducto);
