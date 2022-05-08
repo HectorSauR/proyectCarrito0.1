@@ -15,7 +15,7 @@ function fontc() {
    document.getElementById("cuerpo").style.fontSize="small";
     usc.setNombre("uslogueado");
     us=usc.obtenerDato;
-
+    
     
     usc.setValoresCookie(us+"conf1", "small", 10);
   }

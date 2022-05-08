@@ -48,6 +48,8 @@
   padding: 12px;
 }
 
+
 .registro input[type="button"]:hover , .registro input[type="reset"]:hover {
   background: #24303c;
 }
+

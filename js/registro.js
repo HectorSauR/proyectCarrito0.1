@@ -23,6 +23,8 @@ function crearusuario() {
     return alert("Porfavor ingresa contraseña");
   }
 
+
+  
   for (var i = 0; i < array.length; i++) {
     var c = array[i];
 
@@ -31,20 +33,32 @@ function crearusuario() {
     }
    
     var array2 = c.split("=");
-    
+    //console.log(c);
+    //console.log(array2[0] + " "+us);
     if(us==array2[0]){
       alert(
          "EL USUARIO YA SE ENCUENRA EN USO, BUSCA OTRO NOMBRE DE USUSARIO SALUDOS"
       );
       return;
     }
-
   }
-  alert("Usuario REGISTRADO");
-  usc.setValoresCookie(us, contr, 1);
-  usc.setValoresCookie("uslogueado", us, 1);
-//   return;
-  window.location.assign("inicio.html");
+      alert("Usuario REGISTRADO");
+      usc.setValoresCookie(us, contr, 1);
+      usc.setValoresCookie("uslogueado", us, 1);
+    //   return;
+      window.location.assign("inicio.html");
+    
+
+  
+
+    //if(c.length)
+   // if (c.substring(0, us.length) == us) {
+     // alert(
+       // "EL USUARIO YA SE ENCUENTRA EN USO BUSCA OTRO NOMBRE DE USUSARIO SALUDOS"
+     // );
+     // return;
+   // }
+ // }
 }
 
 function eliminarusuario() {

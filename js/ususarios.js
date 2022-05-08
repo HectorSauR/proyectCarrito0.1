@@ -14,6 +14,7 @@ cerrarSesion.addEventListener("click", (e) => {
   ca.style.display = "none";
 });
 
+
 function ususarioconsulta() {
   var tableRef = document.getElementById("tbl-registrados");
   var cuerpotabla = document.createElement("tbody");
@@ -29,7 +30,7 @@ function ususarioconsulta() {
     var array2 = c.split("=");
     let fila = document.createElement("tr");
     // console.log(array2);
-    if (array2[1].length > 18  || array2[1]=="large" || array2[1]=="medium" || array2[1]=="small" || array2[1]=="red" || array2[1]=="blue"|| array2[1]=="green") {
+    if (array2[1].length > 20 || array2[1]=="large" || array2[1]=="medium" || array2[1]=="small" || array2[1]=="red" || array2[1]=="blue"|| array2[1]=="green" || array2[0]=="admin") {
       continue;
     } else {
       let datos = document.createElement("td");
@@ -48,6 +49,8 @@ function ususarioconsulta() {
 }
 
 function nombuser() {
+
+
   usc.setNombre("uslogueado");
   var uss = usc.obtenerDato;
   var ca = document.querySelector(".usuario");
@@ -55,11 +58,12 @@ function nombuser() {
   if (uss.length > 15) {
     console.log(uss);
     ca.style.display = "none";
-    window.location.assign("login.html"); 
+    window.location.assign("pract9.php"); 
     return;
   }
   ca.innerText = uss;
   ca.style.display = "inline";
+  
 }
 
 
