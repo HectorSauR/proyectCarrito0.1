@@ -56,7 +56,7 @@ require "PHP/productos/modprdfunciones.php";
                
               <div  class="textos">
 
-                  <h1>Modificar Producto</h1>
+                  <h1>REGISTRAR PRODUCTO</h1>
                     <label for="name">Nombre: </label>
                     <input type="text" name="txtnombre" id="txtnombre">
                     <label for="name">Descripcion: </label>
@@ -96,7 +96,7 @@ require "PHP/productos/modprdfunciones.php";
                
               <div  class="textos2">
 
-                  <h1>Registrar Producto</h1>
+                  <h1> MODIFICAR PRODUCTO</h1>
 
                     <label for="name">id: </label>
                     <select name="idProd" id="idProd">

@@ -1,13 +1,15 @@
 <?php
 require "../conexion/conexion.php";
 
-class Productomod{
+class modua{
+
+    
 
 
     public function obtener_productos_select() {
         
        
-     $BuscarUsuario = "select * from productos";;
+     $BuscarUsuario = "select * from usuario where id=";
      $Execute = $conexion->query($BuscarUsuario);
 
      $resultado = $Execute->fetchall(PDO::FETCH_ASSOC);

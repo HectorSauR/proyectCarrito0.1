@@ -75,8 +75,7 @@
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
     <script src="js/popup.js"></script>
-    <script src="js/productos.js">
-    </script>
+    <script src="js/productos.js"></script>
     <script src="js/ususarios.js"></script>
     <script src="js/confpag.js"></script>
     <script src="js/admin.js"></script>
