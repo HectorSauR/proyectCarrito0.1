@@ -31,7 +31,7 @@
            
         </div>
         <div class="contenedor-abajo" id="contenedor-abajo">
-            <a href="carrito.html" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"> </i></a>
+            <a href="carrito.php" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"> </i></a>
             <ul>
                 <li><a href="#">Electrónica</a></li>
                 <li><a href="#">Casa Hogar</a></li>

@@ -1,4 +1,4 @@
-var tabla = document.getElementById("tabla");
+var tabla = document.getElementById("contenido-tabla");
 var total = document.querySelector(".total-pagar");
 var overlay = $('.overlay'),
     popup = $('.pop-up'),

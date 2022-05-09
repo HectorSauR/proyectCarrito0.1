@@ -4,7 +4,11 @@
   // class Conexion{
   //   private $host = "localhost";
   //   private $user = "root";
+<<<<<<< HEAD
   //   private $password = "kirihasan123";
+=======
+  //   private $password = "";
+>>>>>>> 4172623b206b0daa22b6a2c81273e2b05189f850
   //   private $db = "bd_alan";
   //   private $conect;
 
