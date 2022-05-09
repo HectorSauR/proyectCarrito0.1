@@ -96,7 +96,7 @@ require "PHP/productos/modprdfunciones.php";
                
               <div  class="textos2">
 
-                  <h1>MODIFICAR PRODUCTO</h1>
+                  <h1>Registrar Producto</h1>
 
                     <label for="name">id: </label>
                     <select name="idProd" id="idProd">

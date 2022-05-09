@@ -1,6 +1,3 @@
-<!-- Falta Mostrar los diferentes totales, la href al carrito y que se seleccionen los productos,
-además de la suma para los totales  -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -59,23 +56,24 @@ además de la suma para los totales  -->
                         <td><img src="img/producto1.png" alt=""></td>
                         <td><p>Teclado gaming</p></td>
                         <td><p>El teclado mecánico gaming Yeyian Spark Serie 2000 de 88 teclas - switch rojo - tecnología Anti-Ghosting y N-Key Rollover, esta diseñado con funciones innovadoras y avanzada technologia para tus intensas batallas durante largas horas de juego. </p></td>
-                        <td><p>3</p></td>
+                        <td class="cantidad">
+                            <a href="#" class="btn-amuentar"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+                            <p>3</p>
+                            <a href="#" class="btn-decrementar"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+                        </td>
                         <td><p>900</p></td>
-                        <td><a href="#"><i class="fa fa-minus-square" aria-hidden="true"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/producto1.png" alt=""></td>
-                        <td><p>Teclado gaming</p></td>
-                        <td><p>El teclado mecánico gaming Yeyian Spark Serie 2000 de 88 teclas - switch rojo - tecnología Anti-Ghosting y N-Key Rollover, esta diseñado con funciones innovadoras y avanzada technologia para tus intensas batallas durante largas horas de juego. </p></td>
-                        <td><p>3</p></td>
-                        <td><p>900</p></td>
-                        <td><a href="#"><i class="fa fa-minus-square" aria-hidden="true"></i></a></td>
+                        <td><a href="#" class="btn-borrar"><i class="fa fa-minus-square" aria-hidden="true"></i></a></td>
                     </tr> -->
                 </tbody>
             </table>
             <p class="total-pagar">$0</p>
-            
-
+            <div class="overlay">
+                <div class="pop-up">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa fa-times"></i></a>
+                    <h3 class="Mensaje">Producto Eliminado Exitosamente del Carrito!</h3>
+                    <div class="barra"></div>
+                </div>
+            </div>
         </div>
     </main>
     <footer id="pie">
@@ -88,6 +86,7 @@ además de la suma para los totales  -->
     <script src="js/ususarios.js"></script>
     <script src="js/confpag.js"></script>
     <script src="js/admin.js"></script>
+    <script src="js/popup.js"></script>
 
 </body>
 </html>

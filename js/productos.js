@@ -84,13 +84,25 @@ crearProducto("Apple iPhone 11 Pro",
 
 // })
 
-var btnAgregarCarrito = $(".btn-agregar-carrito");
-
+var btnAgregarCarrito = $(".btn-agregar-carrito"),
+    overlay = $('.overlay'),
+    popup = $('.pop-up'),
+    barra = $('.pop-up .barra');
 // console.log(btnAgregarCarrito);
 
 btnAgregarCarrito.each(function(index,element,e){
     // console.log($(this).parent());
-    $(this).on("click",function(){
+    $(this).on("click",function(e){
+        // alert("si");
+        overlay.css('display', 'flex');
+
+        barra.animate({
+            width : popup.width()
+        },1200,function(){
+            overlay.css('display', 'none');
+            barra.css('width', '0');
+        })
+        
         var usc = new cookie();
 
         usc.setNombre("uslogueado");
@@ -112,7 +124,7 @@ btnAgregarCarrito.each(function(index,element,e){
         // console.log("Nombre "+nombre + " descripcion "+descripcion + " precio "+precio + " img " + img);
 
         crearCookieProducto(nombre,descripcion,precio,img,id);
-    })
+    });
 
 
 });

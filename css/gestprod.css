@@ -29,23 +29,25 @@ body {
 
 
 .main .contenido {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
   border: 3px solid black;
 }
 
 .main .contenido .input {
-  width: 80%;
+  width: 70%;
 }
 .main .contenido .input .textos{
 
-  width: 100%;
+  width: 60%;
   align-items: center;
   background: #e5e5e5;
   margin-left: 35px;
   border-radius: 20px;
   box-shadow: 7px 13px 37px #000;
+  padding: 10px;
+  margin-right: 20px;
 
 }
 
@@ -94,7 +96,7 @@ body {
   align-items: center;
   justify-content: center;
  padding: 5px;
- width: 90%;
+ width: 25%;
 
 }
 

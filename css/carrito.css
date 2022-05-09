@@ -5,10 +5,12 @@ body table{
 body table th{
     background: #FCA311;
     color: #fff;
+    width: 20%;
 }
 
 body table td{
     width: 20%;
+    text-align: center;
 }
 
 body table img {
@@ -23,6 +25,61 @@ body table img {
     font-size: 20pt;
 }
 
-body table a{
+body table .btn-borrar{
     color: red;
+    font-size: 15pt;
+}
+
+body table .cantidad a {
+    color: #b5b5b5;
+    font-size: 15pt;
+    transition: 0.3s ease all;
+}
+
+body table .cantidad a:hover{
+    color: blue;
+}
+
+body table .cantidad{
+    font-size: 20pt;
+}
+
+.overlay{
+    background:rgba(0, 0, 0, 0.55);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.overlay .pop-up{
+    background: #f8f8f8;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    color:#000;
+    padding: 20px 30px;
+    position:relative;
+}
+
+.overlay .pop-up .btn-cerrar-popup{
+    font-style: none;
+    color: red;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 15pt;
+}
+
+.overlay .pop-up .barra {
+    padding: 5px;
+    background: #FCA311;
+    position: absolute;
+    bottom:0;
+    left: 0;
 }
