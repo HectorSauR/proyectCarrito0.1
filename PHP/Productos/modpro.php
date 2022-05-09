@@ -9,12 +9,12 @@ $conectar = mysqli_connect($host,$user,$clave,$bd);
 
 //require '../conectar/conectar.php';
 $idpr=$_POST['idProd'];
-$nombre = $_POST['txtnombre'];
-$descr = $_POST['txtdescr'];
-$precio = $_POST['txtprec'];
-$cantidad = $_POST['txtcant'];
-$status = $_POST['txtstatus'];
-$imagen = $_FILES['img-elg'];
+$nombre = $_POST['txtnombre2'];
+$descr = $_POST['txtdescr2'];
+$precio = $_POST['txtprec2'];
+$cantidad = $_POST['txtcant2'];
+$status = $_POST['txtstatus2'];
+$imagen = $_FILES['img-elg2'];
 
 
 
@@ -49,5 +49,6 @@ $imagen = $_FILES['img-elg'];
         $modificar=mysqli_query($conectar,"UPDATE productos SET imagen='$pathimg' WHERE idProducto = '$idpr'");
     }
 
+    echo "<script> location.href = '../../gestProductos.php'</script>";
 
 ?>

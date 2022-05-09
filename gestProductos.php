@@ -99,7 +99,7 @@ require "PHP/productos/modprdfunciones.php";
                   <h1> MODIFICAR PRODUCTO</h1>
 
                     <label for="name">id: </label>
-                    <select name="idProd" id="idProd">
+                    <select name="idProd" id="idProd" class="idProd">
                          
                 <option value="#">SELECCIONA UN ID</option>
 
@@ -111,15 +111,15 @@ require "PHP/productos/modprdfunciones.php";
                     </select>
                     
                     <label for="name">Nombre: </label>
-                    <input type="text" name="txtnombre" id="txtnombre">
+                    <input type="text" name="txtnombre2" id="txtnombre2" class="txtnombre2">
                     <label for="name">Descripcion: </label>
-                    <input type="text" name="txtdescr" id="txtdescr">
+                    <input type="text" name="txtdescr2" id="txtdescr2" class="txtdescr2">
                     <label for="name">Precio: </label>
-                    <input type="number" name="txtprec" id="txtprec">
+                    <input type="number" name="txtprec2" id="txtprec2" class="txtprec2">
                     <label for="name">Cantidad: </label>
-                    <input type="number" name="txtcant" id="txtcant">
+                    <input type="number" name="txtcant2" id="txtcant2" class="txtcant2">
                     <label for="name">Status: </label>
-                    <input type="number" name="txtstatus" id="txtstatus">
+                    <input type="number" name="txtstatus2" id="txtstatus2" class="txtstatus2">
 
                 
                     <input type="submit" class="btn" value="Registrar">
@@ -129,6 +129,64 @@ require "PHP/productos/modprdfunciones.php";
             </div>
 
             
+            <script>
+
+                  
+
+                document.querySelector(".idProd").addEventListener("change", (e) =>   {
+                var prd = document.querySelector(".idProd").value;
+               
+               
+           
+                <?php
+           $idprd = '<script> document.write(prd) </script>';
+
+      if ($idprd == ""){
+
+      }else{
+        $productos = "select * from productos where idproducto= '$idprd'";
+        $Execute = $conexion->query($productos);
+        $r = $Execute->fetchall();
+        $datos = [];
+        foreach($r as $row){
+        $datos[] = [
+            'nombre' => $row['nombre'],
+            'descripcion' => $row['descripcion'],
+            'precio' => $row['precio'],
+            'cantidad' => $row['cantidad'],
+            'status' => $row['status'],
+            'imagen' => $row['imagen'],
+        ];
+        }
+
+        // echo $idprd;
+         
+
+      }
+            
+            ?>
+                 
+                 document.querySelector(".txtnombre2").value= '<?php echo $row['nombre']?>';
+                document.querySelector(".txtdescr2").value= '<?php echo  $row['descripcion']?>';
+                document.querySelector(".txtprec2").value= '<?php echo $row['precio']?>';
+                document.querySelector(".txtcant2").value= '<?php echo $row['cantidad']?>';
+                document.querySelector(".txtstatus2").value= '<?php echo $row['status']?>';
+                
+                document.querySelector(".imagen2 .imgelg2 .img-mostrar2").innerHTML =
+                        `
+                        <img src="<?php echo $row['imagen']?>" alt="" class="imagenselec2" name="imagenselec2">
+                    `
+                } )
+
+                
+
+               
+            </script>
+
+           
+
+
+
 
             <div class="imagen2" >
                 <div class="imgelg2" action="registrarimagen.php" method="post" >
@@ -136,7 +194,7 @@ require "PHP/productos/modprdfunciones.php";
                     <img src="img/regalo.png" alt="" class="imagenselec2" name="imagenselec">
                     </div>
                     <!-- <button class="examinar">examinar</button> -->
-                    <input type="file" name="img-elg" id="img-elg" class="img-elg2">
+                    <input type="file" name="img-elg2" id="img-elg2" class="img-elg2">
 
                     
                  </div>
@@ -144,6 +202,11 @@ require "PHP/productos/modprdfunciones.php";
             </div>
             
         </form> 
+
+        <div class="tablaproducto">
+
+        
+        </div>
         
     </div>
 
@@ -152,9 +215,10 @@ require "PHP/productos/modprdfunciones.php";
     </footer>
    
     <script src="js/cookie.js"></script>
+    <script src="js/admin.js"></script>
     <script src="js/ususarios.js"></script>
     <script src="js/confpag.js"></script>
-    <script src="js/admin.js"></script>
+    <script src="PHP/Productos/modproducto.js"></script>
     <script src="PHP/Productos/regprod.js"></script>
 </body>
 </html>
