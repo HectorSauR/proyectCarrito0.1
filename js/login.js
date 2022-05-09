@@ -21,7 +21,7 @@ function user() {
     usc.setNombre(us);
     if (contr == usc.obtenerDatoLogin) {
      usc.setValoresCookie("uslogueado", us, 1);
-      window.location.assign("inicio.html"); 
+      window.location.assign("inicio.php"); 
       alert("BIENVENIDO DE NUEVO: " + us);
     } else {
     //  alert("CONTRASEÑA INCORRECTA")

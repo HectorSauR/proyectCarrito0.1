@@ -19,7 +19,7 @@ require "PHP/productos/modprdfunciones.php";
 
 <header>
         <div class="contenedor-arriba" id="contenedor-arriba">
-            <a href="inicio.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
+            <a href="inicio.php" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>

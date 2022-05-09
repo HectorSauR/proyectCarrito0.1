@@ -29,7 +29,7 @@ if ($usuario == "admin") {
             var usc = new cookie();
             usc.setValoresCookie('admin', 'admin', 1);
             usc.setValoresCookie('uslogueado', 'admin', 1);
-            location.href = "../../inicio.html";
+            location.href = "../../inicio.php";
         </script>
 
 
@@ -40,6 +40,7 @@ if ($usuario == "admin") {
         echo count($r);
         echo "<script> 
             alert ('usuario no encontrado');
+            window.location.assign(\"../../pract9.php\"); 
             </script>";
     }
 } else {
@@ -53,7 +54,7 @@ if ($usuario == "admin") {
         usc.setNombre(us);
         if (contr == usc.obtenerDatoLogin) {
             usc.setValoresCookie("uslogueado", us, 1);
-            window.location.assign("../../inicio.html");
+            window.location.assign("../../inicio.php");
         } else {
             alert("Uusario No encontrado verifica los datos");
             location.href = "../../pract9.php";

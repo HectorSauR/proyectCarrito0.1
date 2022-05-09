@@ -10,7 +10,7 @@ $cantidad = $_POST['txtcant'];
 $imagen = $_FILES['img-elg'];
 
 $extension = pathinfo("../../img/Productos/".$nombre."/".$imagen["name"], PATHINFO_EXTENSION);
-$pathimg = "../../imag/productos/".$nombre."/".$nombre.".".$extension;
+$pathimg = "img/productos/".$nombre."/".$nombre.".".$extension;
 
 if($nombre ==""  || $descr=="" || $precio=="" || $cantidad==""){
   echo "<script> alert('VERIFICA SI LOS DATOS ESTAN CORRECTOS PORFAVOR');
@@ -24,7 +24,7 @@ if($nombre ==""  || $descr=="" || $precio=="" || $cantidad==""){
 
 $regproducto = "INSERT INTO productos VALUES (?,?,?,?,?,?,?)";
 $consulta = $conexion->prepare($regproducto);
-$arregloprod = array(null,$nombre,$descr,$precio,$cantidad,1,$pathimg);
+$arregloprod = array("DEFAULT",$nombre,$descr,$precio,$cantidad,1,$pathimg);
 $res = $consulta->execute($arregloprod);
 //$regproducto = "INSERT INTO productos VALUES ('$nombre','$decripcion','$descr','$precio','$cantidad','$cantidad','$unidadM','$status')";
 //$Execute = $conexion->query($regproducto);

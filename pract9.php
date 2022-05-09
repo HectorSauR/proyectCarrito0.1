@@ -52,7 +52,7 @@ if (isset($_GET["opc"])) {
     
     $valor=$_GET["opc"];
     if ($valor==1) {
-        include("inicio.html");
+        include("inicio.php");
     }else if($valor==2){
     include("registro.html");
 }else if($valor==3){
@@ -80,8 +80,7 @@ if (isset($_GET["opc"])) {
         <input type="submit" value="Ingresar" id="btn-login">
         <input type="reset" value="Limpiar">
     </form>
-      
-       
+    
 </div>
 </main>
 <!-- <button id="agregar">Agregar</button> -->

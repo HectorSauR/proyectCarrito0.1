@@ -13,7 +13,7 @@
 <body onload="nombuser(), cargarFontusr(),cargartemausr()" id="cuerpo">
     <header>
         <div class="contenedor-arriba" id="contenedor-arriba">
-            <a href="inicio.html" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
+            <a href="inicio.php" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
@@ -56,7 +56,7 @@
                         <a href="#" class="btn-agregar-carrito" id="btn-agregar-carrito">Agregar al Carrito</a>
                     </div>
                 </article> -->
-                
+                <?php require 'productos.php';?>
             </div>
         </div>
         <div class="overlay">
@@ -75,7 +75,8 @@
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
     <script src="js/popup.js"></script>
-    <script src="js/productos.js"></script>
+    <script src="js/productos.js">
+    </script>
     <script src="js/ususarios.js"></script>
     <script src="js/confpag.js"></script>
     <script src="js/admin.js"></script>

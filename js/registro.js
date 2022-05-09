@@ -46,7 +46,7 @@ function crearusuario() {
       usc.setValoresCookie(us, contr, 1);
       usc.setValoresCookie("uslogueado", us, 1);
     //   return;
-      window.location.assign("inicio.html");
+      window.location.assign("inicio.php");
     
 
   
