@@ -1,3 +1,6 @@
+<?php
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,7 +33,7 @@
             </ul>
         </div>
         <div class="contenedor-abajo" id="contenedor-abajo">
-            <a href="carrito.html" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a href="carrito.php" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Inicio</a></li>
@@ -51,7 +54,7 @@
                     <th>Precio</th>
                     <th></th>
                 </thead>
-                <tbody>
+                <tbody id="contenido-tabla">
                     <!-- <tr>
                         <td><img src="img/producto1.png" alt=""></td>
                         <td><p>Teclado gaming</p></td>
@@ -66,7 +69,12 @@
                     </tr> -->
                 </tbody>
             </table>
+            <!-- <input type="text" id="valorPHP" value="" style="display: none;"> -->
             <p class="total-pagar">$0</p>
+            <a href="#" class="btn-confirmar-compra">
+                <i class="fa fa-check-square" aria-hidden="true"></i>
+                Confirmar Compra
+            </a>
             <div class="overlay">
                 <div class="pop-up">
                     <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa fa-times"></i></a>
@@ -83,6 +91,7 @@
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
     <script src="js/carrito.js"></script>
+    <script src="js/confCarrito.js"></script>
     <script src="js/ususarios.js"></script>
     <script src="js/confpag.js"></script>
     <script src="js/admin.js"></script>
