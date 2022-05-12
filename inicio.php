@@ -56,8 +56,21 @@
                         <a href="#" class="btn-agregar-carrito" id="btn-agregar-carrito">Agregar al Carrito</a>
                     </div>
                 </article> -->
-                <?php require 'productos.php';?>
+                <?php 
+                    require 'productos.php';
+                    if($totalPaginacion == 1){
+                        crearProducto($totalPaginacion,$result);
+                    }else{
+                        crearProductoPaginacion(1);
+                    }
+                    
+                ?>
             </div>
+            <?php
+                if($totalPaginacion > 1){
+                    crearPaginacion($totalPaginacion);
+                }
+            ?>
         </div>
         <div class="overlay">
             <div class="pop-up">

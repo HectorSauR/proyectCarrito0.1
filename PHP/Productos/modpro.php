@@ -2,7 +2,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$clave = "kirihasan123";
+$clave = "";
 $bd  = "bd_alan";
 
 $conectar = mysqli_connect($host,$user,$clave,$bd);
@@ -43,8 +43,8 @@ $imagen = $_FILES['img-elg2'];
     if ($imagen<>""){
     
         
-    $extension = pathinfo("../../img/Productos/".$nombre."/".$imagen["name"], PATHINFO_EXTENSION);
-    $pathimg = "../../imag/productos/".$nombre."/".$nombre.".".$extension;
+    $extension = pathinfo("../../img/Productos/".$nombre."/".$imagen["nombre"], PATHINFO_EXTENSION);
+    $pathimg = "../../img/productos/".$nombre."/".$nombre.".".$extension;
     
         $modificar=mysqli_query($conectar,"UPDATE productos SET imagen='$pathimg' WHERE idProducto = '$idpr'");
     }

@@ -80,6 +80,7 @@
                 <label for="txtcontr">Contraseña</label>
                 <input type="password" name="txtcontrL" id="txtcontrL" size="20" required placeholder="Ingrese contraseña">
                 <br>
+                <a href="registro.html">No estas registrado?, registrate aquí</a>
                 <input type="submit" value="Ingresar" id="btn-login">
                 <input type="reset" value="Limpiar">
             </form>

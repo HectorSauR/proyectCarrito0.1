@@ -84,6 +84,19 @@ var boton = document.getElementById('agregar');
 
 // })
 
+var contProductos = $("#contenedor-productos");
+var contenedores = [];
+
+contProductos.on("change", function(){
+    var productos = $(".producto");
+
+    if(productos.length > 6){
+        contenedores.push(contProductos);
+    }
+});
+
+
+
 var btnAgregarCarrito = $(".btn-agregar-carrito"),
     overlay = $('.overlay'),
     popup = $('.pop-up'),
