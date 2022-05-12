@@ -139,12 +139,10 @@ require "PHP/productos/modprdfunciones.php";
                
            
                 <?php
-           $idprd = '<script> document.write(prd) </script>';
+         
 
-      if ($idprd == ""){
-
-      }else{
-        $productos = "select * from productos where idproducto= '$idprd'";
+      
+        $productos = "select * from productos where idproducto= '6'";
         $Execute = $conexion->query($productos);
         $r = $Execute->fetchall();
         $datos = [];
@@ -162,7 +160,7 @@ require "PHP/productos/modprdfunciones.php";
         // echo $idprd;
          
 
-      }
+      
             
             ?>
                  

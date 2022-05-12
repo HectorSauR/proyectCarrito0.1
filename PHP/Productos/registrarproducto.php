@@ -41,9 +41,7 @@ if($res)
   $path = "../../img/productos/".$nombre;
   if (!file_exists($path)) {
   mkdir($path, 0777, true);
-    
-  //OBTENER EXTENCION DE IMAGEN
-  //ALMACENA LA IMAGEN EN EL SERVIDOR
+  
   file_put_contents("../../img/productos/".$nombre."/".$nombre.".".$extension,$fileContent);
 
   }
