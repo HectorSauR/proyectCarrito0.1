@@ -40,7 +40,8 @@ body table .cantidad a:hover{
     color: blue;
 }
 
-body table .cantidad{
+body table .cantidad,
+body table .precio{
     font-size: 20pt;
 }
 

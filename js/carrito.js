@@ -103,6 +103,7 @@ function obtenerDatosProducto(){
                 cooki.setNombre("uslogueado");
     
                 var id = $(this).parent().parent().attr("data-id");
+                var cantHtml = $(this).parent().children("p");
                 // console.log(id);
                 // console.
                 var array = document.cookie.split(";");
@@ -130,11 +131,12 @@ function obtenerDatosProducto(){
                     // console.log("Cantidad: "+ parseInt(prod[3],10));
                     cooki.setNombre(nombreCookie);
                     cantidad = parseInt(prod[3],10)+1;
+                    cantHtml.text(cantidad);
                     // console.log(cantidad);
                     cadena = idCookie+"¿"+prod[1] + "¿"+prod[2] +"¿"+ cantidad + "¿"+prod[4] + "¿" + prod[5] + "¿" + prod[6];
                     cooki.setValoresCookie(nombreCookie,cadena,1);
-                    location.reload();
-
+                    console.log(document.cookie);
+                    // location.reload();
                 }
             });
                     
@@ -149,6 +151,8 @@ function obtenerDatosProducto(){
                 cooki.setNombre("uslogueado");
     
                 var id = $(this).parent().parent().attr("data-id");
+                var cantHtml = $(this).parent().children("p");
+
                 console.log(id);
                 // console.
                 var array = document.cookie.split(";");
@@ -175,6 +179,7 @@ function obtenerDatosProducto(){
                     console.log(nombreCookie);
                     cooki.setNombre(nombreCookie);
                     cantidad = parseInt(prod[3],10)-1;
+                    cantHtml.text(cantidad);
                     
                     if(cantidad == 0){
                         cooki.borrarCookie();
@@ -193,7 +198,7 @@ function obtenerDatosProducto(){
                     }
                     cadena = idCookie+"¿"+prod[1] + "¿"+prod[2] +"¿"+ cantidad + "¿"+prod[4] + "¿" + prod[5] + "¿" + prod[6];
                     cooki.setValoresCookie(nombreCookie,cadena,1);
-                    location.reload();
+                    console.log(document.cookie);
                     break;
                 }
             });

@@ -54,7 +54,7 @@
                     <th>Precio</th>
                     <th></th>
                 </thead>
-                <tbody id="contenido-tabla">
+                <tbody id="contenido-tabla" class="tabla1">
                     <!-- <tr>
                         <td><img src="img/producto1.png" alt=""></td>
                         <td><p>Teclado gaming</p></td>
@@ -78,10 +78,31 @@
             <div class="overlay">
                 <div class="pop-up">
                     <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa fa-times"></i></a>
-                    <h3 class="Mensaje">Producto Eliminado Exitosamente del Carrito!</h3>
+                    <h3 class="mensaje">
+                        Producto Eliminado Exitosamente del Carrito!
+                    </h3>
                     <div class="barra"></div>
                 </div>
             </div>
+        </div>
+        <h2>Productos Disponibles</h2>
+        <div class="conten">
+            <table id="tabla">
+                <thead>
+                    <th>Producto</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Existencia</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody id="contenido-tabla">
+                    <?php
+                        require 'productos.php';
+
+                        crearTablaProductos($result);
+                    ?>
+                </tbody>
+            </table>
         </div>
     </main>
     <footer id="pie">

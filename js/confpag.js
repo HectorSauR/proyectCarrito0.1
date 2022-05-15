@@ -13,7 +13,7 @@ function cargarFontusr(){
     usconf=usc.obtenerDato;
   
     var c = usconf.split("¿");
-    console.log(c);
+    // console.log(c);
     document.getElementById("cuerpo").style.background=c[0];
     document.getElementById("contenedor-arriba").style.background=c[1];
     document.getElementById("contenedor-abajo").style.background=c[2];

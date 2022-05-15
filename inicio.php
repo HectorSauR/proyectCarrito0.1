@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/paginacion.css">
 </head>
 <body onload="nombuser(), cargarFontusr(),cargartemausr()" id="cuerpo">
     <header>
@@ -44,33 +45,10 @@
         <h2>¡Bienvenido!</h2>
         <div class="container">
             <h3>Lista de productos</h3>
-            <div class="contenedor-productos" id="contenedor-productos">
-                <!-- <article class="producto" id="producto">
-                    <div class="contenedor-img">
-                        <img src="img/producto1.png" alt="">
-                    </div>
-                    <div class="contenedor-descripcion">
-                        <h2 id="nombre-producto">NombreProducto</h2>
-                        <p class="descripcion" id="descripcion-producto">Descripción</p>
-                        <p class="precio" id="precio-producto">$150</p>
-                        <a href="#" class="btn-agregar-carrito" id="btn-agregar-carrito">Agregar al Carrito</a>
-                    </div>
-                </article> -->
-                <?php 
-                    require 'productos.php';
-                    if($totalPaginacion == 1){
-                        crearProducto($totalPaginacion,$result);
-                    }else{
-                        crearProductoPaginacion(1);
-                    }
-                    
-                ?>
+            <div class="contenedor-productos active" id="contenedor-productos" id-obj="1">
             </div>
-            <?php
-                if($totalPaginacion > 1){
-                    crearPaginacion($totalPaginacion);
-                }
-            ?>
+            <ul class="paginacion">
+            </ul>
         </div>
         <div class="overlay">
             <div class="pop-up">

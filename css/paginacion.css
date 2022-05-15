@@ -1,0 +1,32 @@
+.paginacion{
+    width: 50%;
+    margin: 0 auto;
+    /* display: flex; */
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.206);
+}
+
+.paginacion li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15pt;
+    display: inline-block;
+    padding: 5px 10px;
+    /* background: rgba(122, 122, 122, 0.157); */
+    transition: 0.3s ease all;
+}
+
+.paginacion li a:hover{
+    background: rgb(103, 91, 211);
+    color:#fff;
+    /* border: 1px solid black; */
+}
+
+main .container .active{
+    display : flex;
+}
