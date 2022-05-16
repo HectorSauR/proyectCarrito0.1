@@ -127,7 +127,7 @@ function recibirDatosCrearProd(){
             })
             var paginacion = Math.ceil(datos.length / totalPorCont);
             // console.log(paginacion);
-            for(var i = 0; i < paginacion; i++){
+            for(var i = 0 ; i < paginacion; i++){
                 var list = document.createElement('li');
                 var pag = document.createElement('a');
                 pag.href = "#";
@@ -137,19 +137,30 @@ function recibirDatosCrearProd(){
                 // console.log(contPag);
 
                 if(i+1>1){
+                    // alert(i);
                     var contenedor = $('<div class="contenedor-productos" id="contenedor-productos"></div>');
                     contenedor.className = "contenedor-productos";
+                    contenedor.addClass('principal');
                     contenedor.id = "contenedor-productos";
                     contenedor.attr("id-obj", i+1);
-                    
+                    // console.log(contenedor);
                     contPag.before(contenedor);
                 }
 
                 pag = $(pag);
+                //----------------------------------------------AQUI---------------------------
                 pag.on("click", function(e){
                     e.preventDefault();
+                    var buscador = $(".buscador");
+
+                    if(buscador.hasClass("active")){
+                        buscador.val("");
+                        buscador.removeClass("active");
+                    }
+
                     contenedores = $(".contenedor-productos");
-                    activo = $(".active");
+                    // console.log(document.querySelector(".contenedor-productos"));
+
                     idBtn = $(this).text();
                     
                     $.each(contenedores, function(i,val){
@@ -157,11 +168,16 @@ function recibirDatosCrearProd(){
                         idObj = val.attr("id-obj");
 
                         if(idObj == idBtn){
+                            // alert("id Contenedor: "+idObj + "idBtn: "+idBtn);
                             val.addClass("active");
                         }else{
                             val.removeClass("active");
                         }
                     })
+
+                    // console.log(document.querySelector(".contenedor-productos"));
+
+
 
                 })
             }
@@ -175,7 +191,7 @@ function recibirDatosCrearProd(){
         var x = 0;
         $.each(datos, function(i, val){
             // console.log(i);
-            var contProductos = $('.contenedor-productos');
+            var contProductos = $('.principal');
             var id = val['id'];
             var nombre = val['nombre'];
             var descripcion = val['descripcion'];
@@ -184,6 +200,7 @@ function recibirDatosCrearProd(){
             if(paginacion > 1 && (i % totalPorCont) == 0 && i != 0){
                 // alert("a: "+i);
                 x++;
+                alert("x: "+x);
             }
             
             if(contProductos.length == 1){
@@ -235,7 +252,6 @@ function recibirDatosCrearProd(){
 
         });
 
-        var paginas = $(".paginacion ul li");
 
     })    
 }

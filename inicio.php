@@ -17,6 +17,7 @@
             <a href="inicio.php" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
             <div class="contenedor-busqueda">
                 <a href="#" class="btn-busqueda"><i class="fa fa-search" aria-hidden="true"></i></a>
+                <input type="text" name="buscador" id="buscador" class="buscador" placeholder="Busca un producto aqui...">
             </div>
             
             <ul class="nav">
@@ -45,7 +46,9 @@
         <h2>¡Bienvenido!</h2>
         <div class="container">
             <h3>Lista de productos</h3>
-            <div class="contenedor-productos active" id="contenedor-productos" id-obj="1">
+            <div class="contenedor-productos principal active" id="contenedor-productos" id-obj="1">
+            </div>
+            <div class="contenedor-productos busqueda" id="contenedor-productos" id-obj="1">
             </div>
             <ul class="paginacion">
             </ul>
@@ -67,6 +70,7 @@
     <script src="js/admin.js"></script>
     <script src="js/programa.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/btnBusqueda.js"></script>
     <script src="js/productos.js"></script>
     <script src="js/ususarios.js"></script>
     <script src="js/confpag.js"></script>
