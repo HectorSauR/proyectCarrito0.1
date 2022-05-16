@@ -6,7 +6,25 @@ $usuario = $_POST['txtusuarioL'];
 $pass = $_POST['txtcontrL'];
 
 
-if ($usuario == "admin") {
+$productos = "select * from usuario where usuario= '$usuario'";
+$Execute = $conexion->query($productos);
+$r = $Execute->fetchall();
+
+
+foreach($r as $row){
+    $datos = [
+        'id' => $row['idusuario'],
+        'nombre' => $row['nombre'],
+        'edad' => $row['edad'],
+        'email' => $row['email'],
+        'usuario' => $row['usuario'],
+        'contraseña' => $row['contraseña'],
+        'nivel' => $row['nivel'],
+        'imagen'=> $row['imagen'],
+    ];
+}
+
+if ($datos['nivel'] == "1") {
     $BuscarUsuario = "select * from usuario where usuario = '$usuario' and contraseña = '$pass'";
     $Execute = $conexion->query($BuscarUsuario);
 

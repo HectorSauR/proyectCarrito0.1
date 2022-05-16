@@ -26,7 +26,8 @@ fetch("PHP/BuscarUsuario/buscarusuario.php", {
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Inicio</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-      `;
+        
+      `
 
       document.querySelector(".nav ul").innerHTML = `
       <li><a href="pract9.php" id="cerrar-sesion">CERRAR SESION</a></li>
