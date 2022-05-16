@@ -41,7 +41,7 @@ $imagen = $_FILES['img-elg'];
     <script src='../../js/cookie.js'></script>
 
 
-     <script> var usc = new cookie();
+   <script> var usc = new cookie();
     let us = '<?php echo  $usuario ?>'; 
     usc.setNombre('uslogueado');
     let uss=usc.obtenerDato;

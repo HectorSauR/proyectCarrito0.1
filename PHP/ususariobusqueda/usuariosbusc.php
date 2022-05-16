@@ -6,6 +6,7 @@ $usuario = $_POST['txtusuarioL'];
 $pass = $_POST['txtcontrL'];
 
 
+
 if ($usuario == "admin") {
     $BuscarUsuario = "select * from usuario where usuario = '$usuario' and contraseña = '$pass'";
     $Execute = $conexion->query($BuscarUsuario);
