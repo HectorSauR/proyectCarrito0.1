@@ -7,6 +7,7 @@
     // echo $datos[0]['id'];
     // echo count($datos);
 
+
     $query = 'SELECT * FROM `productos`;';
     $statement = $conexion->prepare($query);
     $statement->execute();

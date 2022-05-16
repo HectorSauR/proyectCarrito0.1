@@ -3,7 +3,7 @@
 
  
 
-  $query = 'SELECT *  FROM `productos` where status="1";';
+  $query = 'SELECT *  FROM `productos`;';
   $statement = $conexion->prepare($query);
   $statement->execute();
   $result = $statement->fetchall();
