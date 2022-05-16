@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$clave = "";
+$clave = "kirihasan123";
 $bd  = "bd_alan";
 
 $conectar = mysqli_connect($host,$user,$clave,$bd);
@@ -13,7 +13,7 @@ $edad = $_POST['txtedad'];
 $email = $_POST['txtemail'];
 $usuario = $_POST['txtusuario'];
 $contraseña = $_POST['txtpasword'];
-
+$imagen = $_FILES['img-elg'];
 
 
 
@@ -45,10 +45,8 @@ $contraseña = $_POST['txtpasword'];
     let us = '<?php echo  $usuario ?>'; 
     usc.setNombre('uslogueado');
     let uss=usc.obtenerDato;
-    alert(uss);
     usc.setNombre(uss);
     let contr =usc.obtenerDato;
-    alert(contr);
     usc.borrarCookie();
     usc.setValoresCookie(us, contr, 1);
     usc.setValoresCookie('uslogueado', us, 1);
@@ -75,12 +73,47 @@ $contraseña = $_POST['txtpasword'];
 
        <?php
     }
+
+    if ($imagen["name"]<>""){
+
+      $extension = pathinfo("../../img/usuario/".$nombre."/".$imagen["name"], PATHINFO_EXTENSION);
+      $fileContent = file_get_contents($imagen['tmp_name']);
+      $pathimg = "  img/usuario/".$nombre."/".$nombre.".".$extension;
+      $path = "../../img/usuario/".$nombre;
+
+      if (!file_exists($path)) {
+      mkdir($path, 0777, true);
+      file_put_contents("../../img/usuario/".$nombre."/".$nombre.".".$extension,$fileContent);
+      $modificar=mysqli_query($conectar,"UPDATE usuario SET imagen='$pathimg' WHERE idusuario = '1'");
+  }else{
+
+  if (!file_exists($pathimg)){
+     // $old = getcwd(); 
+     // chdir($path);
+     // unlink($nombre.".".$extension);
+     // chdir($old); 
+      file_put_contents("../../img/usuario/".$nombre."/".$nombre.".".$extension,$fileContent);
+      $modificar=mysqli_query($conectar,"UPDATE usuario SET imagen='$pathimg' WHERE idusuario = '1'");
+  }
+  else {
+      $old = getcwd(); 
+      chdir($path);
+      unlink($nombre.".".$extension);
+      chdir($old); 
+      file_put_contents("../../img/usuario/".$nombre."/".$nombre.".".$extension,$fileContent);
+      $modificar=mysqli_query($conectar,"UPDATE usuario SET imagen='$pathimg' WHERE idusuario = '1'");
+  }
+  
+}
+ 
+ 
+}
     
 
 
      echo "<script>
      location.href='../../modDatosadmin.php';
-     </script>";
+    </script>";
 ?>
 
 

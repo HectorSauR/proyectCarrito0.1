@@ -48,7 +48,7 @@
 
 <div class="main">
  
-<form class="contenido" action="PHP/modificarUsuario/modua.php" method="post">
+<form class="contenido" action="PHP/modificarUsuario/modua.php" method="post" enctype="multipart/form-data">
             
             <div class="input">
                
@@ -56,24 +56,36 @@
 
                   <h1>MODIFICAR DATOS DE CUENTA</h1>
                     <label for="name">Nombre: </label>
-                    <input type="text" name="txtnombre" id="txtnombre">
+                    <input type="text" name="txtnombre" id="txtnombre" class="txtnombre">
                     <label for="name">Edad: </label>
-                    <input type="text" name="txtedad" id="txtedad">
+                    <input type="text" name="txtedad" id="txtedad" class="txtedad">
                     <label for="name">Email: </label>
-                    <input type="email" name="txtemail" id="txtemail">
+                    <input type="email" name="txtemail" id="txtemail" class="txtemail">
                     <label for="name">Usuario: </label>
-                    <input type="text" name="txtusuario" id="txtusuario">
+                    <input type="text" name="txtusuario" id="txtusuario" class="txtusuario">
                     <label for="name">Password: </label>
-                    <input type="password" name="txtpasword" id="txtpassword">
+                    <input type="password" name="txtpasword" id="txtpassword" class="txtpasword">
                     
                    
-                    <input type="submit" class="btn" value="Registrar">
+                    <input type="submit" class="btn" value="MODIFICAR DATOS">
                  </div>
                
                 
             </div>
 
-            
+            <div class="imagen">
+                <div class="imgelg" action="registrarimagen.php" method="post">
+                    <div class="img-mostrar">
+
+                        <!-- <img src="img/regalo.png" alt="" class="imagenselec" name="imagenselec"> -->
+                    </div>
+                    <!-- <button class="examinar">examinar</button> -->
+                    <input type="file" name="img-elg" id="img-elg" class="img-elg">
+
+
+                </div>
+
+            </div>
             
         </form> 
 
@@ -85,7 +97,7 @@
     <script src="js/confpag.js"></script>
     <script src="js/ususarios.js"></script>
     <script src="js/admin.js"></script>
-
+    <script src="PHP/modificarUsuario/mua.js"></script>
 
     
 </body>

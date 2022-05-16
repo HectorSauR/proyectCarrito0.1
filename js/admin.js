@@ -1,16 +1,29 @@
 
 var usc = new cookie();
 
-
-
-
-
-
-
 usc.setNombre("uslogueado");
   var uss = usc.obtenerDato;
 
-if (uss=="admin"){
+var object = {
+
+  "nombre":uss,
+}
+
+fetch("PHP/BuscarUsuario/buscarusuario.php",{
+method:"POST",
+body: JSON.stringify(object),
+headers : {
+  'Content-Type': 'application/json'
+}
+})
+
+
+  .then(response => response.text())
+  .then(datos => {
+
+    datos = JSON.parse(datos);
+
+if (datos["nivel"]=="1"){
     document.querySelector(".contenedor-abajo ul").innerHTML =
         `
         <li><a href="gestProductos.php">PRODUCTOS</a></li>
@@ -31,3 +44,4 @@ if (uss=="admin"){
       `
 }
 
+})
