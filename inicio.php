@@ -46,8 +46,8 @@
         <h2>¡Bienvenido!</h2>
         <div class="container">
             <h3>Lista de productos</h3>
-            <div class="contenedor-productos principal active" id="contenedor-productos" id-obj="1">
-            </div>
+            <!-- <div class="contenedor-productos principal active" id="contenedor-productos" id-obj="1">
+            </div> -->
             <div class="contenedor-productos busqueda" id="contenedor-productos" id-obj="1">
             </div>
             <ul class="paginacion">

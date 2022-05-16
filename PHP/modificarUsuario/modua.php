@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$clave = "kirihasan123";
+$clave = "";
 $bd  = "bd_alan";
 
 $conectar = mysqli_connect($host,$user,$clave,$bd);

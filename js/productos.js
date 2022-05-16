@@ -117,6 +117,7 @@ function recibirDatosCrearProd(){
     })
     .then(response => response.text())
     .then(result => {
+        // alert(result);
         datos = JSON.parse(result);
         
         // console.log(datos.length);
@@ -136,16 +137,21 @@ function recibirDatosCrearProd(){
                 contPag.append(list);
                 // console.log(contPag);
 
-                if(i+1>1){
-                    // alert(i);
+                if(i == 0){
+                    var contenedor = $('<div class="contenedor-productos active" id="contenedor-productos"></div>');
+                }else{
                     var contenedor = $('<div class="contenedor-productos" id="contenedor-productos"></div>');
+                }
+
+                // if(i+1>1){
+                //     // alert(i);
                     contenedor.className = "contenedor-productos";
                     contenedor.addClass('principal');
                     contenedor.id = "contenedor-productos";
                     contenedor.attr("id-obj", i+1);
                     // console.log(contenedor);
                     contPag.before(contenedor);
-                }
+                // }
 
                 pag = $(pag);
                 //----------------------------------------------AQUI---------------------------
@@ -165,13 +171,12 @@ function recibirDatosCrearProd(){
                     
                     $.each(contenedores, function(i,val){
                         val = $(val);
+                        
                         idObj = val.attr("id-obj");
 
                         if(idObj == idBtn){
-                            // alert("id Contenedor: "+idObj + "idBtn: "+idBtn);
+                            $(".active").removeClass("active");
                             val.addClass("active");
-                        }else{
-                            val.removeClass("active");
                         }
                     })
 
@@ -200,7 +205,7 @@ function recibirDatosCrearProd(){
             if(paginacion > 1 && (i % totalPorCont) == 0 && i != 0){
                 // alert("a: "+i);
                 x++;
-                alert("x: "+x);
+                // alert("x: "+x);
             }
             
             if(contProductos.length == 1){

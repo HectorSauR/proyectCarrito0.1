@@ -28,7 +28,7 @@
   
   
   .main .contenido {
-  
+    /* width: 1000px; */
       justify-content: center;
     display: flex;
     grid-template-columns: 1fr 1fr;
