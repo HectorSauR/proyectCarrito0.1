@@ -44,12 +44,41 @@ header .contenedor-arriba .contenedor-busqueda{
     text-align: left;
     margin-top: 10px;
 }
+/* ------------------------------------------------------------------------------------------------ */
+/* BUSQUEDA */
+/* ------------------------------------------------------------------------------------------------ */
+
+header .contenedor-arriba .contenedor-busqueda{
+    display: flex;
+    align-items: center;
+
+}
 
 header .contenedor-arriba .contenedor-busqueda .btn-busqueda{
     color: #fff;
     font-size: 20pt;
     display: block;
 }
+
+header .contenedor-arriba .contenedor-busqueda .buscador{
+    display: none;
+    width: 90%;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18pt;
+    margin-left: 15px;
+    outline:none;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+header .contenedor-arriba .contenedor-busqueda .active{
+    display: block;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
 
 header .contenedor-arriba .nav .btn-usuario{
     right: 50px;
