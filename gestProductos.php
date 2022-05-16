@@ -31,7 +31,7 @@ require "PHP/productos/modprdfunciones.php";
                 <li>
                     <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                     <ul>
-                        <li><a href="pract9.php" id="cerrar-sesion">CERRAR SESION </a></li>
+                        <li><a href="#" id="cerrar-sesion">CERRAR SESION </a></li>
                         <!-- <li><a href=".html" id="cerrar-sesion">CERRAR SESION </a></li> -->
                         <li><a href="configuration.html">CONFIGURACION</a></li>
                     </ul>

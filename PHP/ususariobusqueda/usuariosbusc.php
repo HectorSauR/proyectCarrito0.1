@@ -45,8 +45,8 @@ if ($datos['nivel'] == "1") {
         </script>
         <script>
             var usc = new cookie();
-            usc.setValoresCookie('admin', 'admin', 1);
-            usc.setValoresCookie('uslogueado', 'admin', 1);
+            usc.setValoresCookie('<?= $usuario?>', '<?= $pass?>', 1);
+            usc.setValoresCookie('uslogueado', '<?= $usuario?>', 1);
             location.href = "../../inicio.php";
         </script>
 

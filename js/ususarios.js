@@ -1,17 +1,16 @@
 var usc = new cookie();
 
-var cerrarSesion = document.querySelector("#cerrar-sesion");
-// cerrarSesion.addEventListener("click",function(e){
+var cerrarSesion = $("#cerrar-sesion");
+cerrarSesion.on("click", (e) => {
+  e.preventDefault();
+  var user = new cookie();
 
-// });
-// console.log(cerrarSesion);
-cerrarSesion.addEventListener("click", (e) => {
-
-  usc.setNombre("uslogueado");
-  usc.borrarCookie();
-  console.log("xd");
+  user.setNombre("uslogueado");
+  user.borrarCookie();
+  // alert("chtm");
   var ca = document.querySelector(".usuario");
   ca.style.display = "none";
+  location.href = "pract9.php";
 });
 
 

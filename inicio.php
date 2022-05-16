@@ -24,7 +24,7 @@
                 <li>
                     <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <ul>
-                    <li><a href="pract9.php" id="cerrar-sesion">CERRAR SESION </a></li>
+                    <li><a href="#" id="cerrar-sesion">CERRAR SESION </a></li>
                     <!-- <li><a href=".html" id="cerrar-sesion">CERRAR SESION </a></li> -->
                     <li><a href="configuration.html">CONFIGURACION</a></li>
                   </ul>
@@ -67,12 +67,12 @@
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/cookie.js"></script>
-    <script src="js/admin.js"></script>
     <script src="js/programa.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/btnBusqueda.js"></script>
     <script src="js/productos.js"></script>
     <script src="js/ususarios.js"></script>
+    <script src="js/admin.js"></script>
     <script src="js/confpag.js"></script>
    
 </body>
