@@ -31,6 +31,7 @@ if (datos["nivel"]=="1"){
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Inicio</a></li>
         <li><a href="contacto.html">Contacto</a></li>
+        
       `
 
 
