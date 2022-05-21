@@ -66,7 +66,7 @@ table tbody tr .contenido .inputRegistrar input,
 table tbody tr .contenido input[type="submit"]{
     margin-top: 60px;
     margin-bottom: 30px;
-    width: 15%;
+    width: 25%;
     padding: 10px 0px;
     background: #FCA311;
     color: #14213D;
@@ -85,6 +85,14 @@ table tbody tr .contenido input[type="submit"]:hover{
 .main .conten1 .contenido .imagen,
 table tbody tr .contenido .imagen{
     width: 40%;
+}
+
+.main .conten1 .contenido .imagen .imgelg .img-mostrar img,
+.forModify .imagen .imgelg .img-mostrar2 img{
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
 }
 
 .btnModificar{

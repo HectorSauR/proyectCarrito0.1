@@ -47,7 +47,6 @@
             <form class="contenido" action="PHP/productos/registrarproducto.php" method="post" enctype="multipart/form-data">
                 <h1 class="titulo">REGISTRAR PRODUCTO</h1>
                 <div class="inputRegistrar">
-                    <!-- <div class="textos"> -->
                         <label for="name">Nombre: </label>
                         <input type="text" name="txtnombre" id="txtnombre">
                         <label for="name">Descripcion: </label>
@@ -56,7 +55,6 @@
                         <input type="number" name="txtprec" id="txtprec" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
                         <label for="name">Cantidad: </label>
                         <input type="number" name="txtcant" id="txtcant" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
-                        <!-- </div> -->
                 </div>
                 <div class="imagen">
                     <div class="imgelg" action="registrarimagen.php" method="post">
