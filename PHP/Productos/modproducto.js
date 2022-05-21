@@ -1,7 +1,7 @@
 
 
 
-document.querySelector("#img-elg2").addEventListener("change", (e) => {
+document.querySelector("#img-elg").addEventListener("change", (e) => {
 
     console.log(e.target.files)
     var imagen = e.target.files[0]
