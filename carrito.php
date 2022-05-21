@@ -85,25 +85,6 @@
                 </div>
             </div>
         </div>
-        <h2>Productos Disponibles</h2>
-        <div class="conten">
-            <table id="tabla">
-                <thead>
-                    <th>Producto</th>
-                    <th>Nombre</th>
-                    <th>Descripción</th>
-                    <th>Existencia</th>
-                    <th>Precio</th>
-                </thead>
-                <tbody id="contenido-tabla">
-                    <?php
-                        require 'productos.php';
-
-                        crearTablaProductos($result);
-                    ?>
-                </tbody>
-            </table>
-        </div>
     </main>
     <footer id="pie">
         <p>made by ENVIPROPMENT</p>

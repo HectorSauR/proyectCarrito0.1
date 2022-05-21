@@ -61,20 +61,20 @@ function confCarrito(){
                         texto.text("Producto Eliminado Exitosamente del Carrito!");
                         overlay.css('display', 'none');
                         barra.css('width', '0');
+                        cook = new cookie();
+    
+                        $.each(lista, function(i,val){
+                            
+                            var nombre = recorrerCookie(val.id);
+                            
+                            cook.setNombre(nombre);
+                            cook.borrarCookie();
+    
+                        })
+                        location.reload();
                         return;
                     })
 
-                    cook = new cookie();
-
-                    $.each(lista, function(i,val){
-                        
-                        var nombre = recorrerCookie(val.id);
-                        
-                        cook.setNombre(nombre);
-                        cook.borrarCookie();
-
-                    })
-                    location.reload();
                     
                 }
 

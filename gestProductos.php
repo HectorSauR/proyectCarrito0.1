@@ -136,12 +136,8 @@ require "PHP/productos/modprdfunciones.php";
                     <div class="img-mostrar2">
                         <img src="img/regalo.png" alt="" class="imagenselec2" name="imagenselec">
                     </div>
-                    <!-- <button class="examinar">examinar</button> -->
                     <input type="file" name="img-elg2" id="img-elg2" class="img-elg2">
-
-
                 </div>
-
             </div>
 
         </form>
