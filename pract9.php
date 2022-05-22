@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <title>Document</title>
+    <link rel="icon" href="img/escritorio.png">
+    <title>Login ENVIPROPMENT</title>
 </head>
 
 <body>

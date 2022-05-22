@@ -1,0 +1,125 @@
+.overlay{
+    background:rgba(0, 0, 0, 0.55);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.overlay .pop-up{
+    background: #f8f8f8;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
+    color:#14213D;
+    padding: 0px 30px 40px 30px;
+    position:relative;
+    width: 600px;
+}
+
+.overlay .pop-up h3{
+    margin-top: 40px;
+    font-size: 18pt;
+    text-align: center;
+    background: #FCA311;
+    padding: 10px;
+}
+
+.overlay .pop-up .btn-cerrar-popup{
+    font-style: none;
+    color: #434343;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 20pt;
+    transition: 0.3s ease all;
+}
+
+.overlay .pop-up .btn-cerrar-popup:hover{
+    color: red;
+}
+
+.overlay .pop-up .btnConfirmar{
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #14213D;
+    background: #FCA311;
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    transition: 0.2s ease all;
+}
+
+.overlay .pop-up .btnConfirmar:hover{
+    background: #14213D;
+    color: #FCA311;
+}
+
+.overlay .pop-up form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.overlay .pop-up form .contenedor-tarjeta,
+.overlay .pop-up .seleccion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.overlay .pop-up form .contenedor-tarjeta{
+    display: none;
+}
+
+.overlay .pop-up .seleccion{
+    margin-bottom: 30px;
+    width: 16%;
+}
+
+.overlay .pop-up .seleccion label{
+    font-size: 15pt;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.overlay .pop-up .seleccion input{
+    margin-top:20px;
+}
+
+.overlay .pop-up form .contenedor-tarjeta p{
+    margin-top:0;
+    margin-bottom: 10px;
+    font-size: 13pt;
+    width: 20%;
+    margin-right: 10px;
+}
+
+.overlay .pop-up form .contenedor-tarjeta input{
+    margin-bottom: 10px;
+    font-size: 15pt;
+    width: 75%;
+    color:#14213D;
+}
+
+.overlay .pop-up form .contenedor-tarjeta .txtDate{
+    width: 30%;
+}
+
+.overlay .pop-up form .contenedor-tarjeta .mes{
+    width: 14%;
+}
+
+.overlay .pop-up form .contenedor-tarjeta .anio{
+    width: 30%;
+    margin-left: 15px;
+}
