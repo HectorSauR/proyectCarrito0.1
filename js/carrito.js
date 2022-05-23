@@ -135,11 +135,11 @@ function obtenerDatosProducto(){
                     // console.log(cantidad);
                     cadena = idCookie+"¿"+prod[1] + "¿"+prod[2] +"¿"+ cantidad + "¿"+prod[4] + "¿" + prod[5] + "¿" + prod[6];
                     cooki.setValoresCookie(nombreCookie,cadena,1);
-                    console.log(document.cookie);
+                    // console.log(document.cookie);
                     // location.reload();
                 }
+                recalcularTotal();       
             });
-                    
         });
 
         btnDecrementarProducto.each(function(index,element){
@@ -153,7 +153,7 @@ function obtenerDatosProducto(){
                 var id = $(this).parent().parent().attr("data-id");
                 var cantHtml = $(this).parent().children("p");
 
-                console.log(id);
+                // console.log(id);
                 // console.
                 var array = document.cookie.split(";");
                 
@@ -176,7 +176,7 @@ function obtenerDatosProducto(){
                     if(cooki.obtenerDato != prod[6] || idCookie != id){
                         continue;  
                     }
-                    console.log(nombreCookie);
+                    // console.log(nombreCookie);
                     cooki.setNombre(nombreCookie);
                     cantidad = parseInt(prod[3],10)-1;
                     cantHtml.text(cantidad);
@@ -198,12 +198,28 @@ function obtenerDatosProducto(){
                     }
                     cadena = idCookie+"¿"+prod[1] + "¿"+prod[2] +"¿"+ cantidad + "¿"+prod[4] + "¿" + prod[5] + "¿" + prod[6];
                     cooki.setValoresCookie(nombreCookie,cadena,1);
-                    console.log(document.cookie);
+                    // console.log(document.cookie);
                     break;
                 }
+                recalcularTotal();        
             });
-                    
         });
+
+}
+
+function recalcularTotal(){
+    let total = 0;
+    $("tr").each(function(index,element){
+        if(index == 0){
+            return;
+        }
+        var cantidad = parseInt($(element).children(".cantidad").children("p").text());
+        var costo = parseFloat($(element).children(".precio").text().trim().substring(1));
+        // alert($(element).children(".precio").text().substring(1));
+        total += cantidad * costo;
+    })
+    // alert(total);
+    $(".total-pagar").html("$"+total.toFixed(2));
 
 }
 

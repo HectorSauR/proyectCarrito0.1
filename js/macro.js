@@ -23,5 +23,11 @@ $("#tarjeta").keypress(function(e){
 })
 
 $(".btnConfirmar").on("click", function(e){
-    $(".overlay").css({"display" : "none"})
+    e.preventDefault();
+    $(".overlay-pago").css({"display" : "none"});
+})
+
+$("#btn-cerrar-popup").on("click", function(e){
+    e.preventDefault();
+    $(".overlay-pago").css({"display" : "none"});
 })
