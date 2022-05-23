@@ -1,17 +1,21 @@
+<?php
+    require 'PHP/sesiones/comprobarSesion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina Principal</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/paginacion.css">
+    <link rel="icon" href="img/escritorio.png">
 </head>
-<body onload="nombuser(), cargarFontusr(),cargartemausr()" id="cuerpo">
+<body onload="cargarFontusr(),cargartemausr()" id="cuerpo">
     <header>
         <div class="contenedor-arriba" id="contenedor-arriba">
             <a href="inicio.php" class="btn-nombre"><h1>ENVIPROPMENT</h1></a>
@@ -24,9 +28,9 @@
                 <li>
                     <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <ul>
-                    <li><a href="#" id="cerrar-sesion">CERRAR SESION </a></li>
-                    <!-- <li><a href=".html" id="cerrar-sesion">CERRAR SESION </a></li> -->
-                    <li><a href="configuration.html">CONFIGURACION</a></li>
+                    <?php
+                        opcionesAdmin($nivel);
+                    ?>
                   </ul>
                 </li>
             </ul>
@@ -35,10 +39,9 @@
         <div class="contenedor-abajo" id="contenedor-abajo">
             <a href="carrito.php" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"> </i></a>
             <ul>
-                <li><a href="#">Electrónica</a></li>
-                <li><a href="#">Casa Hogar</a></li>
-                <li><a href="#">Consumibles</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <?php
+                    navegaciónAdmin($nivel);
+                ?>
             </ul>
         </div>
     </header>
@@ -71,9 +74,9 @@
     <script src="js/popup.js"></script>
     <script src="js/btnBusqueda.js"></script>
     <script src="js/productos.js"></script>
-    <script src="js/ususarios.js"></script>
     <script src="js/admin.js"></script>
     <script src="js/confpag.js"></script>
+    <script src="js/pruebaFetchAwait.js"></script>
    
 </body>
 </html>

@@ -31,7 +31,7 @@
             ></a>
             <ul>
               <li>
-                <a href="pract9.php" id="cerrar-sesion">INICIAR SESION</a>
+                <a href="login.php" id="cerrar-sesion">INICIAR SESION</a>
               </li>
               <li><a href="#">CONFIGURACION</a></li>
             </ul>
