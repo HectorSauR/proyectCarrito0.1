@@ -1,5 +1,6 @@
-<!-- Falta el href desde cualquier lugar dando click a envipropment y envie aqui
-además de que muestre los datos que se integren en los txt box  -->
+<?php
+    require 'PHP/sesiones/comprobarSesion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +24,11 @@ además de que muestre los datos que se integren en los txt box  -->
             </div>
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
-
+                    <a href="#" class="btn-usuario"><span class="usuario"><?=$usr?></span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <ul>
-                    <li><a href="#" id="cerrar-sesion">CERRAR SESION </a></li>
-                    <li><a href="configuration.html">CONFIGURACION</a></li>
+                    <?php
+                        opcionesAdmin($nivel);
+                    ?>
                   </ul>
                 </li>
             </ul>
@@ -35,10 +36,9 @@ además de que muestre los datos que se integren en los txt box  -->
         <div class="contenedor-abajo" id="contenedor-abajo">
             <a href="carrito.php" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <?php
+                    navegaciónAdmin($nivel);
+                ?>
             </ul>
         </div>
     </header>
@@ -84,7 +84,7 @@ además de que muestre los datos que se integren en los txt box  -->
     </footer>
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
-    <script src="js/admin.js"></script>
+    
     <script src="js/ususarios.js"></script>
     <script src="js/contacto.js"></script>
     <script src="js/confpag.js"></script>

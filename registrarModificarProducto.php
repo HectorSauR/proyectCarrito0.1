@@ -1,4 +1,6 @@
-
+<?php
+    require 'PHP/sesiones/comprobarSesion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +15,7 @@
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/carrito.css">
     <link rel="stylesheet" href="css/registrar.css">
+    <link rel="icon" href="img/escritorio.png">
 </head>
 <body>
     <header>
@@ -23,22 +26,21 @@
             </div>
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
-
-                  <ul>
-                    <li><a href="#" id="cerrar-sesion">CERRAR SESION </a></li>
-                    <li><a href="configuration.html">CONFIGURACION</a></li>
-                  </ul>
+                    <a href="#" class="btn-usuario"><span class="usuario"><?=$usr?></span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    <ul>
+                        <?php
+                            opcionesAdmin($nivel);
+                        ?>
+                    </ul>
                 </li>
             </ul>
         </div>
         <div class="contenedor-abajo" id="contenedor-abajo">
             <a href="carrito.php" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <?php
+                    navegaciónAdmin($nivel);
+                ?>
             </ul>
         </div>
     </header>   
@@ -101,7 +103,7 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/cookie.js"></script>
-    <script src="js/admin.js"></script>
+    
     <script src="js/ususarios.js"></script>
     <script src="js/confpag.js"></script>
     <script src="js/modificarProducto.js"></script>

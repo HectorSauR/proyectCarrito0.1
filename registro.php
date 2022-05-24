@@ -26,7 +26,6 @@
         <ul class="nav">
           <li>
             <a href="#" class="btn-usuario"
-              ><span class="usuario">Nombre</span
               ><i class="fa fa-user-circle-o" aria-hidden="true"></i
             ></a>
             <ul>
@@ -43,10 +42,6 @@
           ><i class="fa fa-shopping-cart" aria-hidden="true"></i
         ></a>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Contacto</a></li>
         </ul>
       </div>
     </header>

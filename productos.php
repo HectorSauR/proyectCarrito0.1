@@ -1,4 +1,13 @@
 <?php
+    session_start();
+
+    $usr = $_SESSION['usuario'];
+    $nivel = $_SESSION['nivel'];
+    
+    if($usr == "" || $usr == null){
+        header("Location:login.php");
+    }
+    
     require 'PHP/conexion/conexion.php';
     
     $query = 'SELECT * FROM `productos` Where status = 1;';
@@ -20,7 +29,7 @@
             <?php
         }
     }
-
+?>
 
     
     

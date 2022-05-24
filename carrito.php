@@ -1,5 +1,5 @@
 <?php
-
+    require 'PHP/sesiones/comprobarSesion.php';
 ?>
 <html lang="en">
 <head>
@@ -25,11 +25,11 @@
             </div>
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
-
+                    <a href="#" class="btn-usuario"><span class="usuario"><?=$usr?></span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <ul>
-                    <li><a href="#" id="cerrar-sesion">CERRAR SESION </a></li>
-                    <li><a href="configuration.html">CONFIGURACION</a></li>
+                    <?php
+                        opcionesAdmin($nivel);
+                    ?>
                   </ul>
                 </li>
             </ul>
@@ -37,10 +37,9 @@
         <div class="contenedor-abajo" id="contenedor-abajo">
             <a href="carrito.php" class="btn-carrito"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <?php
+                    navegaciónAdmin($nivel);
+                ?>
             </ul>
         </div>
     </header>
@@ -57,18 +56,7 @@
                     <th></th>
                 </thead>
                 <tbody id="contenido-tabla" class="tabla1">
-                    <!-- <tr>
-                        <td><img src="img/producto1.png" alt=""></td>
-                        <td><p>Teclado gaming</p></td>
-                        <td><p>El teclado mecánico gaming Yeyian Spark Serie 2000 de 88 teclas - switch rojo - tecnología Anti-Ghosting y N-Key Rollover, esta diseñado con funciones innovadoras y avanzada technologia para tus intensas batallas durante largas horas de juego. </p></td>
-                        <td class="cantidad">
-                            <a href="#" class="btn-amuentar"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
-                            <p>3</p>
-                            <a href="#" class="btn-decrementar"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-                        </td>
-                        <td><p>900</p></td>
-                        <td><a href="#" class="btn-borrar"><i class="fa fa-minus-square" aria-hidden="true"></i></a></td>
-                    </tr> -->
+                    
                 </tbody>
             </table>
             <!-- <input type="text" id="valorPHP" value="" style="display: none;"> -->
@@ -118,7 +106,6 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/cookie.js"></script>
     <script src="js/programa.js"></script>
-    <script src="js/admin.js"></script>
     <script src="js/carrito.js"></script>
     <script src="js/confCarrito.js"></script>
     <script src="js/ususarios.js"></script>

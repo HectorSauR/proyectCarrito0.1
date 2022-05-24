@@ -26,7 +26,7 @@
             
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    <a href="#" class="btn-usuario"><span class="usuario"><?=$usr?></span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <ul>
                     <?php
                         opcionesAdmin($nivel);
@@ -74,7 +74,6 @@
     <script src="js/popup.js"></script>
     <script src="js/btnBusqueda.js"></script>
     <script src="js/productos.js"></script>
-    <script src="js/admin.js"></script>
     <script src="js/confpag.js"></script>
     <script src="js/pruebaFetchAwait.js"></script>
    

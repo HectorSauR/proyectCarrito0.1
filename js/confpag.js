@@ -1,3 +1,5 @@
+usc = new cookie();
+
 function cargarFontusr(){
     usc.setNombre("uslogueado");
     us=usc.obtenerDato+"conf1";

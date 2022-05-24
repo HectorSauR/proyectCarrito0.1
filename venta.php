@@ -1,4 +1,13 @@
 <?php
+    session_start();
+
+    $usr = $_SESSION['usuario'];
+    $nivel = $_SESSION['nivel'];
+    
+    if($usr == "" || $usr == null){
+        header("Location:login.php");
+    }
+    
     require 'PHP/conexion/conexion.php';
 
     $datos = json_decode(file_get_contents('php://input'),true);

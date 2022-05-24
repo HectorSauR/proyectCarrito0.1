@@ -5,9 +5,6 @@ var overlay = $('.overlay'),
     barra = $('.pop-up .barra');
 
 function obtenerDatosProducto(){
-    var galleta = new cookie();
-    galleta.setNombre("uslogueado");
-
     //selecciona una cadena dividiendola en trozos mediante el valor que se le especifica y lo guarda
     //en un array
     var array = document.cookie.split(";");
@@ -18,10 +15,9 @@ function obtenerDatosProducto(){
             continue;
         }
         
-        
         var productos = array[i].split("¿");
         
-        if(galleta.obtenerDato != productos[6]){
+        if($(".usuario").text() != productos[6]){
             // console.log(datos[6]);
             // console.log("aaaa");
             continue;  
@@ -68,7 +64,7 @@ function obtenerDatosProducto(){
                 // console.log(id);
                 // console.log(i + ": "+"Cookie: "+ cooki.obtenerDato +" arr: "+prod[6]+" = "+ (cooki.obtenerDato != prod[6])+" , "+ (idCookie != id));
                 // console.log(cooki.obtenerDato);
-                if(cooki.obtenerDato != prod[6] || idCookie != id){
+                if($(".usuario").text() != prod[6] || idCookie != id){
                     continue;  
                 }
 
@@ -98,10 +94,10 @@ function obtenerDatosProducto(){
             // console.log($(this));
             $(this).on("click",(e) => {
                 e.preventDefault();
-                
+
                 var cooki = new cookie();
                 cooki.setNombre("uslogueado");
-    
+                
                 var id = $(this).parent().parent().attr("data-id");
                 var cantHtml = $(this).parent().children("p");
                 // console.log(id);
@@ -124,7 +120,7 @@ function obtenerDatosProducto(){
                     // console.log(id);
                     // console.log(i + ": "+"Cookie: "+ cooki.obtenerDato +" arr: "+prod[6]+" = "+ (cooki.obtenerDato != prod[6])+" , "+ (idCookie != id));
                     // console.log(cooki.obtenerDato);
-                    if(cooki.obtenerDato != prod[6] || idCookie != id){
+                    if($(".usuario").text() != prod[6] || idCookie != id){
                         continue;  
                     }
                     // console.log("Nombre: "+nombreCookie);
@@ -149,7 +145,7 @@ function obtenerDatosProducto(){
                 
                 var cooki = new cookie();
                 cooki.setNombre("uslogueado");
-    
+
                 var id = $(this).parent().parent().attr("data-id");
                 var cantHtml = $(this).parent().children("p");
 
@@ -173,7 +169,7 @@ function obtenerDatosProducto(){
                     // console.log(id);
                     // console.log(i + ": "+"Cookie: "+ cooki.obtenerDato +" arr: "+prod[6]+" = "+ (cooki.obtenerDato != prod[6])+" , "+ (idCookie != id));
                     // console.log(cooki.obtenerDato);
-                    if(cooki.obtenerDato != prod[6] || idCookie != id){
+                    if($(".usuario").text() != prod[6] || idCookie != id){
                         continue;  
                     }
                     // console.log(nombreCookie);

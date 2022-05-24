@@ -91,7 +91,7 @@ header .contenedor-arriba .nav .btn-usuario{
 header .contenedor-arriba .nav .btn-usuario .usuario{
     margin-right: 10px;
     font-size: 25pt;
-    display: none;
+    display: inline-block;
 }
 
 ul,ol{

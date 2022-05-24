@@ -58,10 +58,8 @@ function crearCookieProducto(nombre,desc,precio,img,id){
     //selecciona una cadena dividiendola en trozos mediante el valor que se le especifica y lo guarda
     //en un array
     var array = document.cookie.split(";");
-    
-    cook.setNombre("uslogueado");
 
-    us = cook.obtenerDato;
+    us = $(".usuario").text();
     // alert(us);
     for(var i = 0; i < array.length; i++){
         
@@ -231,13 +229,6 @@ function recibirDatosCrearProd(){
                     overlay.css('display', 'none');
                     barra.css('width', '0');
                 })
-                var usc = new cookie();
-                usc.setNombre("uslogueado");
-                var uss = usc.obtenerDato;
-                if(uss.length > 15){
-                    alert("Porfavor inicia sesion para agregar articulos al carrito");
-                    return;
-                }
                 var contImg = $(this).parent().parent().children('.contenedor-img');
                 var contDesc =  $(this).parent();
                 // 

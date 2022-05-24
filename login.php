@@ -27,9 +27,9 @@
 
             <ul class="nav">
                 <li>
-                    <a href="#" class="btn-usuario"><span class="usuario">Nombre</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    <a href="#" class="btn-usuario"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                     <ul>
-                        <li><a href="#">REGISTRAR </a></li>
+                        <li><a href="registro.php">REGISTRAR </a></li>
                         <li><a href="#">CONFIGURACION</a></li>
                     </ul>
                 </li>
