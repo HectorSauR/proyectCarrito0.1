@@ -55,9 +55,7 @@
                     <th>Precio</th>
                     <th></th>
                 </thead>
-                <tbody id="contenido-tabla" class="tabla1">
-                    
-                </tbody>
+                <tbody id="contenido-tabla" class="tabla1"></tbody>
             </table>
             <!-- <input type="text" id="valorPHP" value="" style="display: none;"> -->
             <p class="total-pagar">$0</p>

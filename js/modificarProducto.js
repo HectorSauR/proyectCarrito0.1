@@ -110,7 +110,7 @@ function botonMostrarFormulario(){
                                     <label for="name">Cantidad: </label>
                                     <input type="number" name="txtcant" id="txtcant" value="${datos["cantidad"]}" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
                                     <label for="name">Status: </label>
-                                    <input type="number" name="txtstatus" id="txtstatus" value=${datos["status"]} required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 49)" min="1">
+                                    <input type="number" name="txtstatus" id="txtstatus" value=${datos["status"]} required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 49)" min="0">
                                     <p class="text-example">[1 = activo] [0 = inactivo]</p>
                             </div>
                             <div class="imagen">

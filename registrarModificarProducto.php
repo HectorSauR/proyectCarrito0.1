@@ -89,7 +89,7 @@
                     <?php
                         require 'productos.php';
         
-                        crearTablaProductos($result);
+                        crearTablaProductos($result2);
                     ?>
                 </tbody>
             </table>

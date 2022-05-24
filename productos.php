@@ -1,9 +1,5 @@
 <?php
-    session_start();
 
-    $usr = $_SESSION['usuario'];
-    $nivel = $_SESSION['nivel'];
-    
     if($usr == "" || $usr == null){
         header("Location:login.php");
     }
@@ -15,6 +11,12 @@
     $statement->execute();
     $result = $statement->fetchall();
     
+
+    $query = 'SELECT * FROM `productos`;';
+    $statement = $conexion->prepare($query);
+    $statement->execute();
+    $result2 = $statement->fetchall();
+
     function crearTablaProductos($productos){
         foreach($productos as $row){
             ?>
