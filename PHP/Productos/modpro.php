@@ -53,10 +53,7 @@ $imagen = $_FILES['img-elg2'];
     }else{
 
     if (!file_exists($pathimg)){
-       // $old = getcwd(); 
-       // chdir($path);
-       // unlink($nombre.".".$extension);
-       // chdir($old); 
+
         file_put_contents("../../img/productos/".$nombre."/".$nombre.".".$extension,$fileContent);
         $modificar=mysqli_query($conectar,"UPDATE productos SET imagen='$pathimg' WHERE idProducto = '$idpr'");
     }
