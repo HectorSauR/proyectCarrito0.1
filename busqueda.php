@@ -23,7 +23,8 @@
             'cantidad' => $row['cantidad'],
             'descripcion' => $row['descripcion'],
             'precio' => $row['precio'],
-            'imagen' => $row['imagen']);
+            'imagen' => $row['imagen'],
+            'status' => $row['status']);
     }
 
     echo json_encode($datos);

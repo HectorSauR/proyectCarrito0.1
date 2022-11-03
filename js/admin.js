@@ -21,7 +21,7 @@ fetch("PHP/BuscarUsuario/buscarusuario.php", {
 
     if (datos["nivel"] == "1") {
       document.querySelector(".contenedor-abajo ul").innerHTML = `
-        <li><a href="gestProductos.php">PRODUCTOS</a></li>
+        <li><a href="registrarModificarProducto.php">PRODUCTOS</a></li>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Inicio</a></li>

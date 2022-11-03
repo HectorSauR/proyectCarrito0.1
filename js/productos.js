@@ -49,7 +49,6 @@ function crearProducto(id,nombre,descripcion,precio,nombreImg,contProductos) {
 
 function crearCookieProducto(nombre,desc,precio,img,id){
     var cook = new cookie();
-    var contProductos = 1;
     var nombreGalleta = "carrito";
     var cant = 1;
     var cadena = "";
@@ -84,9 +83,7 @@ function crearCookieProducto(nombre,desc,precio,img,id){
             cant = parseInt(productos[3],10);
             break;
         } 
-
-        contProductos++;
-
+        
     }
     // alert(antGalleta);
     if(repetida){
@@ -122,7 +119,7 @@ function recibirDatosCrearProd(){
         
         // console.log(datos.length);
         var contPag = $(".paginacion");
-        if(datos.length > totalPorCont){
+        // if(datos.length > totalPorCont){
             contPag.css({
                 "display" : "flex"
             })
@@ -186,12 +183,12 @@ function recibirDatosCrearProd(){
 
                 })
             }
-        }else{
-            var paginacion = 1;
-            contPag.css({
-                "display" : "none"
-            })
-        }
+        // }else{
+        //     var paginacion = 1;
+        //     contPag.css({
+        //         "display" : "none"
+        //     })
+        // }
 
         var x = 0;
         $.each(datos, function(i, val){

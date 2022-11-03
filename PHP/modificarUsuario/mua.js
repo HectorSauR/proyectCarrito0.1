@@ -32,7 +32,7 @@ headers : {
     
     document.querySelector(".imagen .imgelg .img-mostrar").innerHTML =
             `
-            <img src="${datos['imagen']}" alt="" class="imagenselec" name="imagenselec">
+            <img src="${datos['imagen']}" alt="" class="imagenselec" name="imagenselec" width="300px" height="300px">
         `
 
 })
